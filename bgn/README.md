@@ -28,13 +28,7 @@ To install the PBC library, download the appropriate files for your system from 
 ```sh
 $ sudo apt-get install build-essential flex bison
 ```
-The PBC source can be compiled and installed using the usual GNU Build System:
 
-```sh
-$ ./configure
-$ make
-$ sudo make install
-```
 After installing, you may need to rebuild the search path for libraries.
 
 **NOTE: the PBC library is installed to /usr/local/lib so you may need to add ```export LD_LIBRARY_PATH=/usr/local/lib/``` to your .profile or equivalent**
