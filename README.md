@@ -5,7 +5,8 @@
 ```sh
 $ sudo apt-get install build-essential flex bison
 ```
-``````````````````
+wget -c https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz -O - | tar -xz
+cd pbc-0.5.14``````````
 cd pbc-0.5.14
 ./configure
 make
