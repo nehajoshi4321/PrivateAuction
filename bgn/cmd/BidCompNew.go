@@ -160,7 +160,7 @@ func main() {
                 fmt.Print(" : ",  rawBids[i])
         }
         fmt.Println(" with MIN = ", minBid)
- 
+        //winning bid calculation
         winBid = encryptedCompare(bids, NUM_BIDDERS)
         fmt.Println("Winning bid in Main:", winBid)
 }
