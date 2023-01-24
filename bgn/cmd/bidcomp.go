@@ -17,9 +17,9 @@ import (
   "log"
 )
 
-const KEYBITS = 1024
+const KEYBITS = 2048
 const POLYBASE = 3
-const MSGSPACE = 10000000 // message space for polynomial coefficients
+const MSGSPACE = 1000000000 // message space for polynomial coefficients
 const FPSCALEBASE = 3
 const FPPREC = 0.0001
 const DET = true // deterministic ops
@@ -207,7 +207,7 @@ func encbidgenerate2(r1a int, r2a int, r1b int, r2b int) big.Int {
 	}
 	
 	 rand.Seed(time.Now().UnixNano())
-	bid :=rand.Intn(1000)
+	bid :=rand.Intn(10000)
 	 fmt.Print("\n")
 	 fmt.Println("===plain bid value")
 	fmt.Println(bid)
@@ -280,10 +280,10 @@ func bid_final_score(user_i big.Int, user_j big.Int) (big.Int, big.Int){
         r2b :=10
       */  
         rand.Seed(time.Now().UnixNano())
-	r1a :=rand.Intn(1000)
-	r2a :=rand.Intn(1000)
-	r1b :=rand.Intn(1000)
-        r2b :=rand.Intn(1000)
+	r1a :=rand.Intn(10000)
+	r2a :=rand.Intn(10000)
+	r1b :=rand.Intn(10000)
+        r2b :=rand.Intn(10000)
         
         fmt.Println(r1a, r2a, r1b, r2b)
    //     param := PARAM
