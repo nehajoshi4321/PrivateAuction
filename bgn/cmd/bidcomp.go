@@ -363,6 +363,7 @@ func main(){
         for j:=0; j<n; j++{
         
        // if domain[0]<domain[j]
+       // if domain[0]<domain[j]
        r:=domain[0].Cmp(&domain[j])
         if r==-1{
             domain[0]=domain[j]

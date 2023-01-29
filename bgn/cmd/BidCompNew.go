@@ -12,7 +12,7 @@ import (
 const KEYBITS = 1024
 const POLYBASE = 3
 const MSGSPACE = 10000000 // message space for polynomial coefficients
-const NUM_BIDDERS = 4
+const NUM_BIDDERS = 7
 const FPSCALEBASE = 3
 const FPPREC = 0.0001
 const MAX_RAND = 1000
@@ -20,9 +20,10 @@ const MAX_BID = 1000
 const DET = true // deterministic ops
  
 type Bidder struct {
-        bid,rA,rB int
+        bid,rA,rB,identity int
         pubK *bgn.PublicKey
         secK *bgn.SecretKey
+        eBid, erA, erB *bgn.Ciphertext
 }
  
 func createPairwiseKey() (*bgn.PublicKey, *bgn.SecretKey, error) {
@@ -33,134 +34,106 @@ func createPairwiseKey() (*bgn.PublicKey, *bgn.SecretKey, error) {
         if err != nil {
                 panic(err)
         }
-        return pk, sk
+        return pk, sk, err
+}
+
+// A party calls this function to add its own randomization to the received encrypted bid of the other party.
+func addRandom(eBid *bgn.Ciphertext, erA *bgn.Ciphertext, erB *bgn.Ciphertext, pubK *bgn.PublicKey, rA int, rB int) *bgn.Ciphertext {
+
+        // Encrypting the random values with the received public key
+        selfErA := pubK.Encrypt(big.NewInt(int64(rA)))
+        selfErB := pubK.Encrypt(big.NewInt(int64(rB)))
+
+        // Adding encrypted random values to the received eBid
+        tempErA := pubK.Add(erA, selfErA)
+        tempErB := pubK.Mult(erB, selfErB)
+
+        tempEbid := pubK.Mult(eBid, tempErA)
+        eBid = pubK.Add(tempEbid, tempErB)
+
+        return eBid
 }
  
-func encryptPubKey(pK *bgn.PublicKey, bid int, rA int, rB int) (*bgn.Ciphertext, *bgn.Ciphertext, *bgn.Ciphertext) {
-        cBid := pK.Encrypt(big.NewInt(int64(bid)))
-        cA := pK.Encrypt(big.NewInt(int64(rA)))
-        cB := pK.Encrypt(big.NewInt(int64(rB)))
-        return cBid, cA, cB
- 
+
+
+// Generates the random values (rA, rB), encrypted bids (eBid), and encrypted random values (erA, erB).
+func genPar(bidders []Bidder, idx int){
+    // Generating random values
+    bidders[idx].rA = rand.Intn(MAX_RAND)
+    bidders[idx].rB = rand.Intn(MAX_RAND)
+
+    // Encrypting plaintext bid and random values
+    bidders[idx].eBid = bidders[idx].pubK.Encrypt(big.NewInt(int64(bidders[idx].bid)))
+    bidders[idx].erA = bidders[idx].pubK.Encrypt(big.NewInt(int64(bidders[idx].rA)))
+    bidders[idx].erB = bidders[idx].pubK.Encrypt(big.NewInt(int64(bidders[idx].rB)))
+
 }
- 
-func encryptMergeRemote(sEncBid *bgn.Ciphertext, sEncA *bgn.Ciphertext, sEncB *bgn.Ciphertext, pk *bgn.PublicKey, r1b int, r2b int) *bgn.Ciphertext {
- 
-        c4 := pk.Encrypt(big.NewInt(int64(r1b)))
- 
-        b1 := pk.Add(b, c4)
- 
-        d := pk.Encrypt(big.NewInt(int64(r2b)))
- 
-        c5 := pk.Mult(a, b1)
- 
-        c6 := pk.Mult(c, d)
- 
-        enc := pk.Add(c5, c6)
-        // elapsed := time.Since(start)
-        // log.Printf("time %s", elapsed)
-        return enc
- 
-}
- 
-func bid_comp(encr *bgn.Ciphertext, pk *bgn.PublicKey, sk *bgn.SecretKey) *big.Int {
-        // start := time.Now()
-        bgn.ComputeDecryptionPreprocessing(pk, sk)
-        dec := sk.DecryptFailSafe(encr, pk)
-        //   elapsed := time.Since(start)
-        //   log.Printf("time %s", elapsed)
-        return dec
- 
-}
- 
-func encBid(selfIdx int, otherIdx int, Bidder[] bidders) big.Int {
- 
- 
-        rand.Seed(time.Now().UnixNano())
-    self = bidders[selfIdx]
-    other = bidders[othrIdx]
- 
-        fmt.Println("===plain bid value")
-        fmt.Println(bidders[self].bid)
-        fmt.Println("\n===encrypted bid generation")
- 
-        a, b, c := encryptPubKey(self.pubK, self.bid, self.rA, other.rA)
-        encr := bid_random(a, b, c, self.pubK, r1B, r2B)
- 
-        fmt.Println("===encrypted bid value")
-        fmt.Println(encr)
- 
-        decr := bid_comp(encr, pk_i, sk_i)
- 
-        fmt.Println(decr)
- 
-        return *decr
-}
- 
-func encodedBidPair(bid_i int, bid_j int) (big.Int, big.Int) {
- 
-        r1a := rand.Intn(MAX_RAND)
-        r2a := rand.Intn(MAX_RAND)
-        r1b := rand.Intn(MAX_RAND)
-        r2b := rand.Intn(MAX_RAND)
- 
-        fmt.Println(r1a, r2a, r1b, r2b)
- 
-        user_i = encBidGenerate(bid_i, r1a, r2a, r1b, r2b)
-        user_j = encBidGenerate(bid_j, r1b, r2b, r1a, r2a)
-        return user_i, user_j
-}
- 
-func encryptedCompare(Bidder[] bidders, int numParties) int {
- 
-        bid_i := rand.Intn(MAX_BID)
-        bid_j := rand.Intn(MAX_BID)
- 
-        domain := make([]big.Int, NUM_BIDDERS)
-        for i := 0; i < n; i = i + 2 {
-                domain[i], domain[i+1] = bid_final_score(user_i, user_j)
+
+// Performs private auction on encrypted bids and return the winner.
+func auction(bidders []Bidder) int{
+    // Assuming 1st bidder as winner
+    var winner int = 0
+    var partyB int
+
+    for i := 1; i < NUM_BIDDERS; i = i + 1 {
+        partyB = i
+        // Generating random values and encrypted bids for winner
+        genPar(bidders,winner)
+        // Generating random values and encrypted bids for partyB
+        genPar(bidders,partyB)
+
+        // In real world, below two function calls are to be executed locally by the respective parties.
+
+        // partyB calling the addRandom function to add randomization on the encrypted bids of winner party.
+        bidders[winner].eBid = addRandom(bidders[winner].eBid, bidders[winner].erA, bidders[winner].erB, bidders[winner].pubK, bidders[partyB].rA, bidders[partyB].rB)
+
+        // winner party calling the addRandom function to add randomization on the encrypted bids of partyB
+        bidders[partyB].eBid = addRandom(bidders[partyB].eBid, bidders[partyB].erA, bidders[partyB].erB, bidders[partyB].pubK, bidders[winner].rA, bidders[winner].rB)
+
+        // winner party decrypting the encrypted bid to compute encoded bid
+        bgn.ComputeDecryptionPreprocessing(bidders[winner].pubK, bidders[winner].secK)
+        encodedWinner := bidders[winner].secK.DecryptFailSafe(bidders[winner].eBid, bidders[winner].pubK)
+
+        // partyB decrypting the encrypted bid to compute encoded bid
+        bgn.ComputeDecryptionPreprocessing(bidders[partyB].pubK, bidders[partyB].secK)
+        encodedPartyB := bidders[partyB].secK.DecryptFailSafe(bidders[partyB].eBid, bidders[partyB].pubK)
+
+        if(encodedWinner.Cmp(encodedPartyB) == -1){
+            winner = partyB
         }
- 
-        fmt.Println("finalscore:", domain)
-        var k int
-        k = 0
-        for j := 0; j < n; j++ {
- 
-                // if domain[0]<domain[j]
-                r := domain[0].Cmp(&domain[j])
-                if r == -1 {
-                        domain[0] = domain[j]
-                        k = j
-                }
- 
-        }
-        fmt.Println("winning bid:domain", k, "with the value", domain[0])
-       elapsed := time.Since(start)
-        log.Printf("time %s", elapsed)
+    }
+
+    return bidders[winner].identity
 }
- 
+
+
+// Generating plaintext bids and public-private key pair for each bidder.
+func initBidders(bidders []Bidder){
+    fmt.Println("Entering initBidders()\n")
+    var _err error
+    for i := 0; i < NUM_BIDDERS; i = i + 1 {
+        bidders[i].identity = i + 1
+        bidders[i].bid = rand.Intn(MAX_BID)
+        fmt.Println("bidders[",i,"] value is: ", bidders[i].bid, "\n" )
+        bidders[i].pubK,bidders[i].secK, _err = createPairwiseKey()
+        if _err != nil {
+        	panic(_err)
+        }
+    }
+    fmt.Println("Exiting initBidders()\n")
+}
+
+
 func main() {
- 
+        fmt.Println("Entering main()\n")
+        // Initializing the seed using current time for random number generation.
         rand.Seed(time.Now().UnixNano())
-        start := time.Now()
-        bids := make([]Bidder, NUM_BIDDERS)
-        minBid = MAX_BID
-        minIndex = MAX_BID
- 
-        fmt.Print(" BIDS are ")
-        for i := 0; i < NUM_BIDDERS; i = i + 1 {
-                bids[i].bid= rand.Intn(MAX_BID)
-                bids[i].r1= rand.Intn(MAX_RAND)
-                bids[i].r2= rand.Intn(MAX_RAND)
-                if minBid > bids[i].bid{
-                    minBid = bids[i].bid
-                    minIndex = i
-                }
-                (bids[i].pubK,bids[i].secK) = createPairwiseKey()
-                fmt.Print(" : ",  rawBids[i])
-        }
-        fmt.Println(" with MIN = ", minBid)
-        //winning bid calculation.
-        winBid = encryptedCompare(bids, NUM_BIDDERS)
-        fmt.Println("Winning bid in Main:", winBid)
+        bidders := make([]Bidder, NUM_BIDDERS)
+
+        // Initializing the bidders. Generating plaintext bids and public-private key pair.
+        initBidders(bidders)
+
+        // Performing auction.
+        var winner = auction(bidders)
+        fmt.Println("Winner is  bidder: ", winner)
 }
