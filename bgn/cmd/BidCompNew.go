@@ -11,12 +11,12 @@ import (
  
 const KEYBITS = 1024
 const POLYBASE = 3
-const MSGSPACE = 10000000 // message space for polynomial coefficients
+const MSGSPACE = 100000000 // message space for polynomial coefficients
 const NUM_BIDDERS = 7
 const FPSCALEBASE = 3
 const FPPREC = 0.0001
 const MAX_RAND = 1000
-const MAX_BID = 1000
+const MAX_BID = 10000
 const DET = true // deterministic ops
  
 type Bidder struct {
@@ -91,12 +91,12 @@ func auction(bidders []Bidder) int{
         bidders[partyB].eBid = addRandom(bidders[partyB].eBid, bidders[partyB].erA, bidders[partyB].erB, bidders[partyB].pubK, bidders[winner].rA, bidders[winner].rB)
 
         // winner party decrypting the encrypted bid to compute encoded bid
-        bgn.ComputeDecryptionPreprocessing(bidders[winner].pubK, bidders[winner].secK)
         encodedWinner := bidders[winner].secK.DecryptFailSafe(bidders[winner].eBid, bidders[winner].pubK)
 
         // partyB decrypting the encrypted bid to compute encoded bid
-        bgn.ComputeDecryptionPreprocessing(bidders[partyB].pubK, bidders[partyB].secK)
         encodedPartyB := bidders[partyB].secK.DecryptFailSafe(bidders[partyB].eBid, bidders[partyB].pubK)
+
+        fmt.Println("encoded bid:", encodedWinner)
 
         if(encodedWinner.Cmp(encodedPartyB) == -1){
             winner = partyB
@@ -119,6 +119,8 @@ func initBidders(bidders []Bidder){
         if _err != nil {
         	panic(_err)
         }
+        bgn.ComputeDecryptionPreprocessing(bidders[i].pubK, bidders[i].secK)
+
     }
     fmt.Println("Exiting initBidders()\n")
 }
