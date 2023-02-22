@@ -26,7 +26,7 @@ type Bidder struct {
         secK *bgn.SecretKey
         eBid, eRA, eRB *bgn.Ciphertext
 }
-//create pairwise key
+//create pairwise keys
 func createPairwiseKey() (*bgn.PublicKey, *bgn.SecretKey, error) {
         pk, sk, err := bgn.NewKeyGen(KEYBITS, big.NewInt(MSGSPACE), POLYBASE, FPSCALEBASE, FPPREC, DET)
 
