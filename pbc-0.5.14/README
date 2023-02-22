@@ -18,10 +18,3 @@ file COPYING for details.
 
 ------------------------------------------------------------------------------
 Ben Lynn <blynn@cs.stanford.edu>
-
-Installation Steps: 
-
-cd pbc-0.5.14
-./configure
-make
-sudo make install
