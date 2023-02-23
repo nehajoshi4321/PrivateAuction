@@ -73,3 +73,846 @@
 2023/02/22 22:06:07 Total time taken by the auction process: 6.210683382s
 2023/02/22 22:06:07 Winner is  bidder:  1  with bid:  9908
 2023/02/22 22:06:07 Time for calculating the winner: 7.504167209s
+2023/02/23 11:04:13 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:04:14 Time for calculating the initBiddersRand: 1.074738851s
+2023/02/23 11:04:14 Comparing  0  and  1 raw values: 3598 , 7709
+2023/02/23 11:04:15 Comparing  1  and  2 raw values: 7709 , 1847
+2023/02/23 11:04:16 Comparing  1  and  3 raw values: 7709 , 2577
+2023/02/23 11:04:17 Comparing  1  and  4 raw values: 7709 , 1743
+2023/02/23 11:04:17 Comparing  1  and  5 raw values: 7709 , 5342
+2023/02/23 11:04:18 Comparing  1  and  6 raw values: 7709 , 2186
+2023/02/23 11:04:19 Total time taken by the auction process: 4.142708076s
+2023/02/23 11:04:19 Winner is  bidder:  2  with bid:  7709
+2023/02/23 11:04:19 Time for calculating the winner: 5.217639825s
+2023/02/23 11:05:07 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:05:08 Time for calculating the initBiddersRand: 1.037126727s
+2023/02/23 11:05:08 Comparing  0  and  1 raw values: 3642 , 6993
+2023/02/23 11:05:09 Comparing  1  and  2 raw values: 6993 , 1433
+2023/02/23 11:05:10 Comparing  1  and  3 raw values: 6993 , 5630
+2023/02/23 11:05:10 Comparing  1  and  4 raw values: 6993 , 4768
+2023/02/23 11:05:11 Comparing  1  and  5 raw values: 6993 , 2337
+2023/02/23 11:05:12 Comparing  1  and  6 raw values: 6993 , 4334
+2023/02/23 11:05:12 Total time taken by the auction process: 4.346914735s
+2023/02/23 11:05:12 Winner is  bidder:  2  with bid:  6993
+2023/02/23 11:05:12 Time for calculating the winner: 5.38418783s
+2023/02/23 11:05:41 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:05:42 Time for calculating the initBiddersRand: 847.408183ms
+2023/02/23 11:05:42 Comparing  0  and  1 raw values: 733 , 7809
+2023/02/23 11:05:42 Comparing  1  and  2 raw values: 7809 , 7781
+2023/02/23 11:05:43 Comparing  1  and  3 raw values: 7809 , 5156
+2023/02/23 11:05:44 Comparing  1  and  4 raw values: 7809 , 7719
+2023/02/23 11:05:44 Comparing  1  and  5 raw values: 7809 , 6372
+2023/02/23 11:05:45 Comparing  1  and  6 raw values: 7809 , 6864
+2023/02/23 11:05:46 Total time taken by the auction process: 4.317235588s
+2023/02/23 11:05:46 Winner is  bidder:  2  with bid:  7809
+2023/02/23 11:05:46 Time for calculating the winner: 5.164783135s
+2023/02/23 11:05:59 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:06:01 Time for calculating the initBiddersRand: 1.056129998s
+2023/02/23 11:06:01 Comparing  0  and  1 raw values: 4011 , 6558
+2023/02/23 11:06:01 Comparing  1  and  2 raw values: 6558 , 4364
+2023/02/23 11:06:02 Comparing  1  and  3 raw values: 6558 , 9818
+2023/02/23 11:06:03 Comparing  3  and  4 raw values: 9818 , 8456
+2023/02/23 11:06:03 Comparing  3  and  5 raw values: 9818 , 5024
+2023/02/23 11:06:04 Comparing  3  and  6 raw values: 9818 , 5216
+2023/02/23 11:06:05 Total time taken by the auction process: 4.29667366s
+2023/02/23 11:06:05 Winner is  bidder:  4  with bid:  9818
+2023/02/23 11:06:05 Time for calculating the winner: 5.353005814s
+2023/02/23 11:09:11 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:09:12 Time for calculating the initBiddersRand: 914.925064ms
+2023/02/23 11:09:12 Comparing  0  and  1 raw values: 5248 , 1818
+2023/02/23 11:09:13 Comparing  0  and  2 raw values: 5248 , 8927
+2023/02/23 11:09:14 Comparing  2  and  3 raw values: 8927 , 9521
+2023/02/23 11:09:14 Comparing  3  and  4 raw values: 9521 , 6944
+2023/02/23 11:09:15 Comparing  3  and  5 raw values: 9521 , 9303
+2023/02/23 11:09:16 Comparing  3  and  6 raw values: 9521 , 7626
+2023/02/23 11:09:17 Total time taken by the auction process: 4.279707478s
+2023/02/23 11:09:17 Winner is  bidder:  4  with bid:  9521
+2023/02/23 11:09:17 Time for calculating the winner: 5.194944795s
+2023/02/23 11:11:36 MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:11:37 Time for calculating the initBiddersRand: 928.710115ms
+2023/02/23 11:11:37 Comparing  0  and  1 raw values: 1775 , 9379
+2023/02/23 11:11:38 Comparing  1  and  2 raw values: 9379 , 8827
+2023/02/23 11:11:39 Comparing  1  and  3 raw values: 9379 , 8924
+2023/02/23 11:11:39 Comparing  1  and  4 raw values: 9379 , 2200
+2023/02/23 11:11:40 Comparing  1  and  5 raw values: 9379 , 7838
+2023/02/23 11:11:41 Comparing  1  and  6 raw values: 9379 , 9947
+2023/02/23 11:11:42 Total time taken by the auction process: 4.265660108s
+2023/02/23 11:11:42 Winner is  bidder:  7  with bid:  9947
+2023/02/23 11:11:42 
+Time for calculating the winner: 5.194553169s
+2023/02/23 11:13:30 
+ MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:13:31 Time for calculating the initBiddersRand: 966.225146ms
+2023/02/23 11:13:31 Comparing  0  and  1 raw values: 5855 , 7054
+2023/02/23 11:13:31 Comparing  1  and  2 raw values: 7054 , 6240
+2023/02/23 11:13:32 Comparing  1  and  3 raw values: 7054 , 1362
+2023/02/23 11:13:33 Comparing  1  and  4 raw values: 7054 , 6567
+2023/02/23 11:13:34 Comparing  1  and  5 raw values: 7054 , 6217
+2023/02/23 11:13:34 Comparing  1  and  6 raw values: 7054 , 1964
+2023/02/23 11:13:35 Total time taken by the auction process: 4.404043008s
+2023/02/23 11:13:35 Winner is  bidder:  2  with bid:  7054
+2023/02/23 11:13:35 Time for calculating the winner: 5.370447308s
+2023/02/23 11:13:49 
+ MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:13:50 Time for calculating the initBiddersRand: 871.801388ms
+2023/02/23 11:13:50 Comparing  0  and  1 raw values: 6126 , 6243
+2023/02/23 11:13:50 Comparing  1  and  2 raw values: 6243 , 8207
+2023/02/23 11:13:51 Comparing  2  and  3 raw values: 8207 , 7383
+2023/02/23 11:13:52 Comparing  2  and  4 raw values: 8207 , 6715
+2023/02/23 11:13:53 Comparing  2  and  5 raw values: 8207 , 8244
+2023/02/23 11:13:53 Comparing  5  and  6 raw values: 8244 , 2443
+2023/02/23 11:13:54 Total time taken by the auction process: 4.383381233s
+2023/02/23 11:13:54 Winner is  bidder:  6  with bid:  8244
+2023/02/23 11:13:54 Time for calculating the winner: 5.255370746s
+2023/02/23 11:16:02 
+ MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:16:03 Time for calculating the initBiddersRand: 897.891542ms
+2023/02/23 11:16:03 Comparing  0  and  1 raw values: 9228 , 9381
+2023/02/23 11:16:04 Comparing  1  and  2 raw values: 9381 , 9592
+2023/02/23 11:16:05 Comparing  2  and  3 raw values: 9592 , 6832
+2023/02/23 11:16:05 Comparing  2  and  4 raw values: 9592 , 7583
+2023/02/23 11:16:06 Comparing  2  and  5 raw values: 9592 , 6374
+2023/02/23 11:16:07 Comparing  2  and  6 raw values: 9592 , 8976
+2023/02/23 11:16:08 Total time taken by the auction process: 4.37593321s
+2023/02/23 11:16:08 Winner is  bidder:  3  with bid:  9592
+2023/02/23 11:16:08 Time for calculating the winner: 5.274050825s
+2023/02/23 11:18:13 
+ MSGSPACE, MAX_RAND, MAX_BID 100000000 ,  1000 ,  10000
+2023/02/23 11:18:13 KEYBITS: 1024
+2023/02/23 11:18:13 MSGSPACE: 100000000
+2023/02/23 11:18:13 NUM_BIDDERS: 7
+2023/02/23 11:18:13 MAX_RAND: 1000
+2023/02/23 11:18:13 MAX_BID: 10000
+2023/02/23 11:18:14 Time for calculating the initBiddersRand: 937.760228ms
+2023/02/23 11:18:14 Comparing  0  and  1 raw values: 951 , 251
+2023/02/23 11:18:14 Comparing  0  and  2 raw values: 951 , 9462
+2023/02/23 11:18:15 Comparing  2  and  3 raw values: 9462 , 8324
+2023/02/23 11:18:16 Comparing  2  and  4 raw values: 9462 , 7293
+2023/02/23 11:18:16 Comparing  2  and  5 raw values: 9462 , 790
+2023/02/23 11:18:17 Comparing  2  and  6 raw values: 9462 , 1851
+2023/02/23 11:18:18 Total time taken by the auction process: 4.254765627s
+2023/02/23 11:18:18 Winner is  bidder:  3  with bid:  9462
+2023/02/23 11:18:18 Time for calculating the winner: 5.193523064s
+2023/02/23 11:33:36 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 11:33:36 MSGSPACE: 100000000
+2023/02/23 11:33:37 Time for calculating the initBiddersRand: 1.073239919s
+2023/02/23 11:33:37 Comparing  0  and  1 raw values: 6095 , 1459
+2023/02/23 11:33:38 Comparing  0  and  2 raw values: 6095 , 592
+2023/02/23 11:33:39 Comparing  0  and  3 raw values: 6095 , 633
+2023/02/23 11:33:39 Comparing  0  and  4 raw values: 6095 , 8593
+2023/02/23 11:33:40 Comparing  4  and  5 raw values: 8593 , 5559
+2023/02/23 11:33:41 Comparing  4  and  6 raw values: 8593 , 1748
+2023/02/23 11:33:42 Total time taken by the auction process: 4.908269308s
+2023/02/23 11:33:42 Winner is  bidder:  5  with bid:  8593
+2023/02/23 11:33:42 Time for calculating the winner: 5.981666917s
+2023/02/23 11:34:27 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 11:34:28 Time for calculating the initBiddersRand: 1.138176289s
+2023/02/23 11:34:28 Comparing  0  and  1 raw values: 4926 , 2090
+2023/02/23 11:34:29 Comparing  0  and  2 raw values: 4926 , 4661
+2023/02/23 11:34:30 Comparing  0  and  3 raw values: 4926 , 7806
+2023/02/23 11:34:31 Comparing  3  and  4 raw values: 7806 , 9808
+2023/02/23 11:34:32 Comparing  4  and  5 raw values: 9808 , 7799
+2023/02/23 11:34:33 Comparing  4  and  6 raw values: 9808 , 4995
+2023/02/23 11:34:33 Total time taken by the auction process: 5.049856179s
+2023/02/23 11:34:33 Winner is  bidder:  5  with bid:  9808
+2023/02/23 11:34:33 Time for calculating the winner: 6.188199014s
+2023/02/23 11:35:21 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 11:35:22 Time for calculating the initBiddersRand: 1.057779012s
+2023/02/23 11:35:22 Comparing  0  and  1 raw values: 2260 , 5113
+2023/02/23 11:35:23 Comparing  1  and  2 raw values: 5113 , 7087
+2023/02/23 11:35:24 Comparing  2  and  3 raw values: 7087 , 4160
+2023/02/23 11:35:25 Comparing  2  and  4 raw values: 7087 , 5638
+2023/02/23 11:35:25 Comparing  2  and  5 raw values: 7087 , 3558
+2023/02/23 11:35:26 Comparing  2  and  6 raw values: 7087 , 826
+2023/02/23 11:35:27 Total time taken by the auction process: 5.060176985s
+2023/02/23 11:35:27 Winner is  bidder:  3  with bid:  7087
+2023/02/23 11:35:27 Time for calculating the winner: 6.118371841s
+2023/02/23 11:53:21 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 11:53:22 Time for calculating the initBiddersRand: 1.110354123s
+2023/02/23 11:53:22 Comparing  0  and  1 raw values: 9814 , 5755
+2023/02/23 11:53:23 Comparing  0  and  2 raw values: 9814 , 6843
+2023/02/23 11:53:24 Comparing  0  and  3 raw values: 9814 , 6832
+2023/02/23 11:53:25 Comparing  0  and  4 raw values: 9814 , 6851
+2023/02/23 11:53:26 Comparing  0  and  5 raw values: 9814 , 9630
+2023/02/23 11:53:26 Comparing  0  and  6 raw values: 9814 , 4261
+2023/02/23 11:53:27 Total time taken by the auction process: 5.209461388s
+2023/02/23 11:53:27 Winner is  bidder:  1  with bid:  9814
+2023/02/23 11:53:27 Time for calculating the winner: 6.320161073s
+2023/02/23 12:24:53 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 12:24:54 Time for calculating the initBiddersRand: 1.181678778s
+2023/02/23 12:24:54 Comparing  0  and  1 raw values: 8458 , 2589
+2023/02/23 12:24:55 Comparing  0  and  2 raw values: 8458 , 498
+2023/02/23 12:24:55 Comparing  0  and  3 raw values: 8458 , 3792
+2023/02/23 12:24:56 Comparing  0  and  4 raw values: 8458 , 7778
+2023/02/23 12:24:57 Comparing  0  and  5 raw values: 8458 , 601
+2023/02/23 12:24:58 Comparing  0  and  6 raw values: 8458 , 6137
+2023/02/23 12:24:59 Total time taken by the auction process: 4.804427732s
+2023/02/23 12:24:59 Winner is  bidder:  1  with bid:  8458
+2023/02/23 12:24:59 Time for calculating the winner: 5.986262214s
+2023/02/23 12:49:15 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 12:49:16 Time for calculating the initBiddersRand: 844.507892ms
+2023/02/23 12:49:16 Comparing  0  and  1 raw values: 5043 , 6336
+2023/02/23 12:49:16 Comparing  1  and  2 raw values: 6336 , 7668
+2023/02/23 12:49:17 Comparing  2  and  3 raw values: 7668 , 9740
+2023/02/23 12:49:18 Comparing  3  and  4 raw values: 9740 , 7093
+2023/02/23 12:49:19 Comparing  3  and  5 raw values: 9740 , 6061
+2023/02/23 12:49:19 Comparing  3  and  6 raw values: 9740 , 4520
+2023/02/23 12:49:20 Total time taken by the auction process: 4.429584373s
+2023/02/23 12:49:20 Winner is  bidder:  4  with bid:  9740
+2023/02/23 12:49:20 Time for calculating the winner: 5.274239439s
+2023/02/23 12:49:20 memory usage = 132 MiB
+2023/02/23 12:50:39 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 12:50:40 Time for calculating the initBiddersRand: 996.363ms
+2023/02/23 12:50:40 Comparing  0  and  1 raw values: 5116 , 9463
+2023/02/23 12:50:41 Comparing  1  and  2 raw values: 9463 , 1587
+2023/02/23 12:50:42 Comparing  1  and  3 raw values: 9463 , 5262
+2023/02/23 12:50:43 Comparing  1  and  4 raw values: 9463 , 6624
+2023/02/23 12:50:43 Comparing  1  and  5 raw values: 9463 , 4388
+2023/02/23 12:50:44 Comparing  1  and  6 raw values: 9463 , 2462
+2023/02/23 12:50:45 Total time taken by the auction process: 4.155734778s
+2023/02/23 12:50:45 Winner is  bidder:  2  with bid:  9463
+2023/02/23 12:50:45 Time for calculating the winner: 5.152247568s
+2023/02/23 12:50:45 amount of memory currently allocated by the code = 149 MiB
+2023/02/23 14:21:29 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:21:30 Time for calculating the initBiddersRand: 959.881215ms
+2023/02/23 14:21:30 Comparing  0  and  1 raw values: 7274 , 3907
+2023/02/23 14:21:30 Comparing  0  and  2 raw values: 7274 , 9517
+2023/02/23 14:21:31 Comparing  2  and  3 raw values: 9517 , 6634
+2023/02/23 14:21:32 Comparing  2  and  4 raw values: 9517 , 5868
+2023/02/23 14:21:32 Comparing  2  and  5 raw values: 9517 , 8541
+2023/02/23 14:21:33 Comparing  2  and  6 raw values: 9517 , 3942
+2023/02/23 14:21:34 Total time taken by the auction process: 4.100190081s
+2023/02/23 14:21:34 Winner is  bidder:  3  with bid:  9517
+2023/02/23 14:21:34 Time for calculating the winner: 5.0602299s
+2023/02/23 14:21:34 amount of memory currently allocated by the code = 112 MiB
+2023/02/23 14:37:00 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:37:01 Time for calculating the initBiddersRand: 935.530898ms
+2023/02/23 14:37:01 Comparing  0  and  1 raw values: 1233 , 2936
+2023/02/23 14:37:02 Comparing  1  and  2 raw values: 2936 , 9780
+2023/02/23 14:37:02 Comparing  2  and  3 raw values: 9780 , 3056
+2023/02/23 14:37:03 Comparing  2  and  4 raw values: 9780 , 3256
+2023/02/23 14:37:04 Comparing  2  and  5 raw values: 9780 , 1292
+2023/02/23 14:37:04 Comparing  2  and  6 raw values: 9780 , 6432
+2023/02/23 14:37:05 Total time taken by the auction process: 4.058072466s
+2023/02/23 14:37:05 Winner is  bidder:  3  with bid:  9780
+2023/02/23 14:37:05 Time for calculating the winner: 4.993781174s
+2023/02/23 14:37:05 amount of memory currently allocated by the code = 146 MB
+2023/02/23 14:56:42 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:56:43 Time for calculating the initBiddersRand: 1.033239529s
+2023/02/23 14:56:43 Comparing  0  and  1 raw values: 3650 , 1414
+2023/02/23 14:56:44 Comparing  0  and  2 raw values: 3650 , 8357
+2023/02/23 14:56:44 Comparing  2  and  3 raw values: 8357 , 2334
+2023/02/23 14:56:45 Comparing  2  and  4 raw values: 8357 , 695
+2023/02/23 14:56:46 Comparing  2  and  5 raw values: 8357 , 9208
+2023/02/23 14:56:46 Comparing  5  and  6 raw values: 9208 , 5290
+2023/02/23 14:56:47 Total time taken by the auction process: 4.132899746s
+2023/02/23 14:56:47 Winner is  bidder:  6  with bid:  9208
+2023/02/23 14:56:47 Time for calculating the winner: 5.16636484s
+2023/02/23 14:56:47 amount of memory currently allocated by the code = 105 MB
+2023/02/23 14:56:47 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:56:48 Time for calculating the initBiddersRand: 907.539137ms
+2023/02/23 14:56:48 Comparing  0  and  1 raw values: 3789 , 1242
+2023/02/23 14:56:49 Comparing  0  and  2 raw values: 3789 , 2042
+2023/02/23 14:56:49 Comparing  0  and  3 raw values: 3789 , 9749
+2023/02/23 14:56:50 Comparing  3  and  4 raw values: 9749 , 5867
+2023/02/23 14:56:51 Comparing  3  and  5 raw values: 9749 , 4591
+2023/02/23 14:56:51 Comparing  3  and  6 raw values: 9749 , 6813
+2023/02/23 14:56:52 Total time taken by the auction process: 4.223856856s
+2023/02/23 14:56:52 Winner is  bidder:  4  with bid:  9749
+2023/02/23 14:56:52 Time for calculating the winner: 5.131665302s
+2023/02/23 14:56:52 amount of memory currently allocated by the code = 207 MB
+2023/02/23 14:56:52 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:56:53 Time for calculating the initBiddersRand: 940.331793ms
+2023/02/23 14:56:53 Comparing  0  and  1 raw values: 2992 , 3287
+2023/02/23 14:56:54 Comparing  1  and  2 raw values: 3287 , 6894
+2023/02/23 14:56:55 Comparing  2  and  3 raw values: 6894 , 5160
+2023/02/23 14:56:55 Comparing  2  and  4 raw values: 6894 , 9540
+2023/02/23 14:56:56 Comparing  4  and  5 raw values: 9540 , 8349
+2023/02/23 14:56:57 Comparing  4  and  6 raw values: 9540 , 7531
+2023/02/23 14:56:57 Total time taken by the auction process: 4.08888116s
+2023/02/23 14:56:57 Winner is  bidder:  5  with bid:  9540
+2023/02/23 14:56:57 Time for calculating the winner: 5.029463341s
+2023/02/23 14:56:57 amount of memory currently allocated by the code = 430 MB
+2023/02/23 14:56:57 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:56:58 Time for calculating the initBiddersRand: 864.161234ms
+2023/02/23 14:56:58 Comparing  0  and  1 raw values: 4989 , 1497
+2023/02/23 14:56:59 Comparing  0  and  2 raw values: 4989 , 547
+2023/02/23 14:57:00 Comparing  0  and  3 raw values: 4989 , 9415
+2023/02/23 14:57:01 Comparing  3  and  4 raw values: 9415 , 9937
+2023/02/23 14:57:01 Comparing  4  and  5 raw values: 9937 , 4306
+2023/02/23 14:57:02 Comparing  4  and  6 raw values: 9937 , 1383
+2023/02/23 14:57:03 Total time taken by the auction process: 4.316148501s
+2023/02/23 14:57:03 Winner is  bidder:  5  with bid:  9937
+2023/02/23 14:57:03 Time for calculating the winner: 5.180591674s
+2023/02/23 14:57:03 amount of memory currently allocated by the code = 439 MB
+2023/02/23 14:57:03 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:04 Time for calculating the initBiddersRand: 920.17704ms
+2023/02/23 14:57:04 Comparing  0  and  1 raw values: 1662 , 7090
+2023/02/23 14:57:04 Comparing  1  and  2 raw values: 7090 , 1590
+2023/02/23 14:57:05 Comparing  1  and  3 raw values: 7090 , 8861
+2023/02/23 14:57:06 Comparing  3  and  4 raw values: 8861 , 619
+2023/02/23 14:57:06 Comparing  3  and  5 raw values: 8861 , 5505
+2023/02/23 14:57:07 Comparing  3  and  6 raw values: 8861 , 8574
+2023/02/23 14:57:08 Total time taken by the auction process: 4.132373175s
+2023/02/23 14:57:08 Winner is  bidder:  4  with bid:  8861
+2023/02/23 14:57:08 Time for calculating the winner: 5.052842298s
+2023/02/23 14:57:08 amount of memory currently allocated by the code = 521 MB
+2023/02/23 14:57:08 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:09 Time for calculating the initBiddersRand: 1.063980006s
+2023/02/23 14:57:09 Comparing  0  and  1 raw values: 3752 , 5840
+2023/02/23 14:57:10 Comparing  1  and  2 raw values: 5840 , 3269
+2023/02/23 14:57:10 Comparing  1  and  3 raw values: 5840 , 4575
+2023/02/23 14:57:11 Comparing  1  and  4 raw values: 5840 , 2597
+2023/02/23 14:57:12 Comparing  1  and  5 raw values: 5840 , 8119
+2023/02/23 14:57:12 Comparing  5  and  6 raw values: 8119 , 9088
+2023/02/23 14:57:13 Total time taken by the auction process: 3.975022677s
+2023/02/23 14:57:13 Winner is  bidder:  7  with bid:  9088
+2023/02/23 14:57:13 Time for calculating the winner: 5.039286891s
+2023/02/23 14:57:13 amount of memory currently allocated by the code = 853 MB
+2023/02/23 14:57:13 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:14 Time for calculating the initBiddersRand: 1.004769151s
+2023/02/23 14:57:14 Comparing  0  and  1 raw values: 3521 , 2527
+2023/02/23 14:57:15 Comparing  0  and  2 raw values: 3521 , 4242
+2023/02/23 14:57:16 Comparing  2  and  3 raw values: 4242 , 5895
+2023/02/23 14:57:16 Comparing  3  and  4 raw values: 5895 , 4541
+2023/02/23 14:57:17 Comparing  3  and  5 raw values: 5895 , 749
+2023/02/23 14:57:18 Comparing  3  and  6 raw values: 5895 , 400
+2023/02/23 14:57:18 Total time taken by the auction process: 4.479963227s
+2023/02/23 14:57:18 Winner is  bidder:  4  with bid:  5895
+2023/02/23 14:57:18 Time for calculating the winner: 5.485026567s
+2023/02/23 14:57:18 amount of memory currently allocated by the code = 958 MB
+2023/02/23 14:57:19 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:20 Time for calculating the initBiddersRand: 949.313578ms
+2023/02/23 14:57:20 Comparing  0  and  1 raw values: 8919 , 6806
+2023/02/23 14:57:20 Comparing  0  and  2 raw values: 8919 , 6728
+2023/02/23 14:57:21 Comparing  0  and  3 raw values: 8919 , 4686
+2023/02/23 14:57:22 Comparing  0  and  4 raw values: 8919 , 2690
+2023/02/23 14:57:22 Comparing  0  and  5 raw values: 8919 , 4067
+2023/02/23 14:57:23 Comparing  0  and  6 raw values: 8919 , 7397
+2023/02/23 14:57:24 Total time taken by the auction process: 4.265928188s
+2023/02/23 14:57:24 Winner is  bidder:  1  with bid:  8919
+2023/02/23 14:57:24 Time for calculating the winner: 5.21553037s
+2023/02/23 14:57:24 amount of memory currently allocated by the code = 852 MB
+2023/02/23 14:57:24 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:25 Time for calculating the initBiddersRand: 952.364215ms
+2023/02/23 14:57:25 Comparing  0  and  1 raw values: 8869 , 7259
+2023/02/23 14:57:26 Comparing  0  and  2 raw values: 8869 , 2600
+2023/02/23 14:57:26 Comparing  0  and  3 raw values: 8869 , 2027
+2023/02/23 14:57:27 Comparing  0  and  4 raw values: 8869 , 1024
+2023/02/23 14:57:28 Comparing  0  and  5 raw values: 8869 , 8847
+2023/02/23 14:57:28 Comparing  0  and  6 raw values: 8869 , 6900
+2023/02/23 14:57:29 Total time taken by the auction process: 4.019167576s
+2023/02/23 14:57:29 Winner is  bidder:  1  with bid:  8869
+2023/02/23 14:57:29 Time for calculating the winner: 4.971749073s
+2023/02/23 14:57:29 amount of memory currently allocated by the code = 1186 MB
+2023/02/23 14:57:29 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 14:57:30 Time for calculating the initBiddersRand: 850.789734ms
+2023/02/23 14:57:30 Comparing  0  and  1 raw values: 7491 , 6079
+2023/02/23 14:57:31 Comparing  0  and  2 raw values: 7491 , 7749
+2023/02/23 14:57:31 Comparing  2  and  3 raw values: 7749 , 4516
+2023/02/23 14:57:32 Comparing  2  and  4 raw values: 7749 , 5878
+2023/02/23 14:57:33 Comparing  2  and  5 raw values: 7749 , 8767
+2023/02/23 14:57:33 Comparing  5  and  6 raw values: 8767 , 3762
+2023/02/23 14:57:34 Total time taken by the auction process: 4.28658644s
+2023/02/23 14:57:34 Winner is  bidder:  6  with bid:  8767
+2023/02/23 14:57:34 Time for calculating the winner: 5.137676921s
+2023/02/23 14:57:34 amount of memory currently allocated by the code = 1027 MB
+2023/02/23 15:30:59 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:00 Time for calculating the initBiddersRand: 900.824314ms
+2023/02/23 15:31:00 Comparing  0  and  1 raw values: 741 , 9882
+2023/02/23 15:31:00 Comparing  1  and  2 raw values: 9882 , 8762
+2023/02/23 15:31:01 Comparing  1  and  3 raw values: 9882 , 5494
+2023/02/23 15:31:02 Comparing  1  and  4 raw values: 9882 , 9818
+2023/02/23 15:31:02 Comparing  1  and  5 raw values: 9882 , 5922
+2023/02/23 15:31:03 Comparing  1  and  6 raw values: 9882 , 913
+2023/02/23 15:31:04 Total time taken by the auction process: 4.155274045s
+2023/02/23 15:31:04 Winner is  bidder:  2  with bid:  9882
+2023/02/23 15:31:04 Time for calculating the winner: 5.056310424s
+2023/02/23 15:31:04 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:05 Time for calculating the initBiddersRand: 897.007676ms
+2023/02/23 15:31:05 Comparing  0  and  1 raw values: 8137 , 9012
+2023/02/23 15:31:05 Comparing  1  and  2 raw values: 9012 , 3680
+2023/02/23 15:31:06 Comparing  1  and  3 raw values: 9012 , 329
+2023/02/23 15:31:07 Comparing  1  and  4 raw values: 9012 , 1729
+2023/02/23 15:31:08 Comparing  1  and  5 raw values: 9012 , 6715
+2023/02/23 15:31:08 Comparing  1  and  6 raw values: 9012 , 9714
+2023/02/23 15:31:09 Total time taken by the auction process: 4.180710944s
+2023/02/23 15:31:09 Winner is  bidder:  7  with bid:  9714
+2023/02/23 15:31:09 Time for calculating the winner: 5.078032382s
+2023/02/23 15:31:09 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:10 Time for calculating the initBiddersRand: 978.138464ms
+2023/02/23 15:31:10 Comparing  0  and  1 raw values: 6903 , 8965
+2023/02/23 15:31:11 Comparing  1  and  2 raw values: 8965 , 3388
+2023/02/23 15:31:11 Comparing  1  and  3 raw values: 8965 , 7718
+2023/02/23 15:31:12 Comparing  1  and  4 raw values: 8965 , 5796
+2023/02/23 15:31:13 Comparing  1  and  5 raw values: 8965 , 5344
+2023/02/23 15:31:13 Comparing  1  and  6 raw values: 8965 , 1208
+2023/02/23 15:31:14 Total time taken by the auction process: 4.031389594s
+2023/02/23 15:31:14 Winner is  bidder:  2  with bid:  8965
+2023/02/23 15:31:14 Time for calculating the winner: 5.009795405s
+2023/02/23 15:31:14 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:15 Time for calculating the initBiddersRand: 871.188369ms
+2023/02/23 15:31:15 Comparing  0  and  1 raw values: 349 , 7178
+2023/02/23 15:31:16 Comparing  1  and  2 raw values: 7178 , 1894
+2023/02/23 15:31:17 Comparing  1  and  3 raw values: 7178 , 8373
+2023/02/23 15:31:17 Comparing  3  and  4 raw values: 8373 , 405
+2023/02/23 15:31:18 Comparing  3  and  5 raw values: 8373 , 87
+2023/02/23 15:31:19 Comparing  3  and  6 raw values: 8373 , 2696
+2023/02/23 15:31:19 Total time taken by the auction process: 4.238221206s
+2023/02/23 15:31:19 Winner is  bidder:  4  with bid:  8373
+2023/02/23 15:31:19 Time for calculating the winner: 5.109670118s
+2023/02/23 15:31:19 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:20 Time for calculating the initBiddersRand: 1.062996864s
+2023/02/23 15:31:20 Comparing  0  and  1 raw values: 2585 , 1056
+2023/02/23 15:31:21 Comparing  0  and  2 raw values: 2585 , 3793
+2023/02/23 15:31:22 Comparing  2  and  3 raw values: 3793 , 6407
+2023/02/23 15:31:22 Comparing  3  and  4 raw values: 6407 , 3943
+2023/02/23 15:31:23 Comparing  3  and  5 raw values: 6407 , 6624
+2023/02/23 15:31:24 Comparing  5  and  6 raw values: 6624 , 263
+2023/02/23 15:31:24 Total time taken by the auction process: 4.045654225s
+2023/02/23 15:31:24 Winner is  bidder:  6  with bid:  6624
+2023/02/23 15:31:24 Time for calculating the winner: 5.108943087s
+2023/02/23 15:31:25 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:25 Time for calculating the initBiddersRand: 895.893858ms
+2023/02/23 15:31:25 Comparing  0  and  1 raw values: 5575 , 4951
+2023/02/23 15:31:26 Comparing  0  and  2 raw values: 5575 , 9130
+2023/02/23 15:31:27 Comparing  2  and  3 raw values: 9130 , 6931
+2023/02/23 15:31:28 Comparing  2  and  4 raw values: 9130 , 3920
+2023/02/23 15:31:28 Comparing  2  and  5 raw values: 9130 , 169
+2023/02/23 15:31:29 Comparing  2  and  6 raw values: 9130 , 6016
+2023/02/23 15:31:30 Total time taken by the auction process: 4.11817356s
+2023/02/23 15:31:30 Winner is  bidder:  3  with bid:  9130
+2023/02/23 15:31:30 Time for calculating the winner: 5.014244314s
+2023/02/23 15:31:30 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:31 Time for calculating the initBiddersRand: 958.140159ms
+2023/02/23 15:31:31 Comparing  0  and  1 raw values: 5666 , 3469
+2023/02/23 15:31:31 Comparing  0  and  2 raw values: 5666 , 9295
+2023/02/23 15:31:32 Comparing  2  and  3 raw values: 9295 , 6725
+2023/02/23 15:31:33 Comparing  2  and  4 raw values: 9295 , 1553
+2023/02/23 15:31:34 Comparing  2  and  5 raw values: 9295 , 2123
+2023/02/23 15:31:34 Comparing  2  and  6 raw values: 9295 , 7727
+2023/02/23 15:31:35 Total time taken by the auction process: 4.555561884s
+2023/02/23 15:31:35 Winner is  bidder:  3  with bid:  9295
+2023/02/23 15:31:35 Time for calculating the winner: 5.513954312s
+2023/02/23 15:31:35 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:36 Time for calculating the initBiddersRand: 912.176836ms
+2023/02/23 15:31:36 Comparing  0  and  1 raw values: 7138 , 4665
+2023/02/23 15:31:37 Comparing  0  and  2 raw values: 7138 , 9399
+2023/02/23 15:31:37 Comparing  2  and  3 raw values: 9399 , 6947
+2023/02/23 15:31:38 Comparing  2  and  4 raw values: 9399 , 1627
+2023/02/23 15:31:39 Comparing  2  and  5 raw values: 9399 , 7849
+2023/02/23 15:31:40 Comparing  2  and  6 raw values: 9399 , 7929
+2023/02/23 15:31:40 Total time taken by the auction process: 4.044614611s
+2023/02/23 15:31:40 Winner is  bidder:  3  with bid:  9399
+2023/02/23 15:31:40 Time for calculating the winner: 4.957090242s
+2023/02/23 15:31:40 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:41 Time for calculating the initBiddersRand: 880.47217ms
+2023/02/23 15:31:41 Comparing  0  and  1 raw values: 8561 , 6830
+2023/02/23 15:31:42 Comparing  0  and  2 raw values: 8561 , 8014
+2023/02/23 15:31:43 Comparing  0  and  3 raw values: 8561 , 3182
+2023/02/23 15:31:43 Comparing  0  and  4 raw values: 8561 , 1489
+2023/02/23 15:31:44 Comparing  0  and  5 raw values: 8561 , 8244
+2023/02/23 15:31:45 Comparing  0  and  6 raw values: 8561 , 5304
+2023/02/23 15:31:45 Total time taken by the auction process: 4.171256926s
+2023/02/23 15:31:45 Winner is  bidder:  1  with bid:  8561
+2023/02/23 15:31:45 Time for calculating the winner: 5.051967065s
+2023/02/23 15:31:45 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:31:46 Time for calculating the initBiddersRand: 1.020745556s
+2023/02/23 15:31:46 Comparing  0  and  1 raw values: 1603 , 5370
+2023/02/23 15:31:47 Comparing  1  and  2 raw values: 5370 , 9001
+2023/02/23 15:31:48 Comparing  2  and  3 raw values: 9001 , 470
+2023/02/23 15:31:49 Comparing  2  and  4 raw values: 9001 , 3790
+2023/02/23 15:31:49 Comparing  2  and  5 raw values: 9001 , 5802
+2023/02/23 15:31:50 Comparing  2  and  6 raw values: 9001 , 5783
+2023/02/23 15:31:51 Total time taken by the auction process: 4.084718422s
+2023/02/23 15:31:51 Winner is  bidder:  3  with bid:  9001
+2023/02/23 15:31:51 Time for calculating the winner: 5.105689609s
+2023/02/23 15:32:55 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:32:56 Time for calculating the initBiddersRand: 930.877379ms
+2023/02/23 15:32:56 Comparing  0  and  1 raw values: 4424 , 251
+2023/02/23 15:32:57 Comparing  0  and  2 raw values: 4424 , 2348
+2023/02/23 15:32:58 Comparing  0  and  3 raw values: 4424 , 2046
+2023/02/23 15:32:58 Comparing  0  and  4 raw values: 4424 , 2387
+2023/02/23 15:32:59 Comparing  0  and  5 raw values: 4424 , 8776
+2023/02/23 15:33:00 Comparing  5  and  6 raw values: 8776 , 7387
+2023/02/23 15:33:00 Total time taken by the auction process: 4.096305858s
+2023/02/23 15:33:00 Winner is  bidder:  6  with bid:  8776
+2023/02/23 15:33:00 Time for calculating the winner: 5.02742836s
+2023/02/23 15:33:01 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:02 Time for calculating the initBiddersRand: 1.022244649s
+2023/02/23 15:33:02 Comparing  0  and  1 raw values: 4045 , 6394
+2023/02/23 15:33:02 Comparing  1  and  2 raw values: 6394 , 3270
+2023/02/23 15:33:03 Comparing  1  and  3 raw values: 6394 , 8539
+2023/02/23 15:33:04 Comparing  3  and  4 raw values: 8539 , 7785
+2023/02/23 15:33:04 Comparing  3  and  5 raw values: 8539 , 2529
+2023/02/23 15:33:05 Comparing  3  and  6 raw values: 8539 , 7003
+2023/02/23 15:33:06 Total time taken by the auction process: 4.119565137s
+2023/02/23 15:33:06 Winner is  bidder:  4  with bid:  8539
+2023/02/23 15:33:06 Time for calculating the winner: 5.142076s
+2023/02/23 15:33:06 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:07 Time for calculating the initBiddersRand: 881.921185ms
+2023/02/23 15:33:07 Comparing  0  and  1 raw values: 2106 , 2671
+2023/02/23 15:33:07 Comparing  1  and  2 raw values: 2671 , 6264
+2023/02/23 15:33:08 Comparing  2  and  3 raw values: 6264 , 9065
+2023/02/23 15:33:09 Comparing  3  and  4 raw values: 9065 , 194
+2023/02/23 15:33:09 Comparing  3  and  5 raw values: 9065 , 5904
+2023/02/23 15:33:10 Comparing  3  and  6 raw values: 9065 , 9036
+2023/02/23 15:33:11 Total time taken by the auction process: 4.033981788s
+2023/02/23 15:33:11 Winner is  bidder:  4  with bid:  9065
+2023/02/23 15:33:11 Time for calculating the winner: 4.91616309s
+2023/02/23 15:33:11 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:12 Time for calculating the initBiddersRand: 954.848391ms
+2023/02/23 15:33:12 Comparing  0  and  1 raw values: 3028 , 7832
+2023/02/23 15:33:13 Comparing  1  and  2 raw values: 7832 , 131
+2023/02/23 15:33:13 Comparing  1  and  3 raw values: 7832 , 5806
+2023/02/23 15:33:14 Comparing  1  and  4 raw values: 7832 , 561
+2023/02/23 15:33:15 Comparing  1  and  5 raw values: 7832 , 7003
+2023/02/23 15:33:15 Comparing  1  and  6 raw values: 7832 , 9535
+2023/02/23 15:33:16 Total time taken by the auction process: 4.368296841s
+2023/02/23 15:33:16 Winner is  bidder:  7  with bid:  9535
+2023/02/23 15:33:16 Time for calculating the winner: 5.323436322s
+2023/02/23 15:33:16 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:17 Time for calculating the initBiddersRand: 969.878946ms
+2023/02/23 15:33:17 Comparing  0  and  1 raw values: 6655 , 9972
+2023/02/23 15:33:18 Comparing  1  and  2 raw values: 9972 , 5044
+2023/02/23 15:33:19 Comparing  1  and  3 raw values: 9972 , 8714
+2023/02/23 15:33:19 Comparing  1  and  4 raw values: 9972 , 1515
+2023/02/23 15:33:20 Comparing  1  and  5 raw values: 9972 , 2431
+2023/02/23 15:33:21 Comparing  1  and  6 raw values: 9972 , 9264
+2023/02/23 15:33:21 Total time taken by the auction process: 4.197814382s
+2023/02/23 15:33:21 Winner is  bidder:  2  with bid:  9972
+2023/02/23 15:33:21 Time for calculating the winner: 5.168009123s
+2023/02/23 15:33:21 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:22 Time for calculating the initBiddersRand: 934.575023ms
+2023/02/23 15:33:22 Comparing  0  and  1 raw values: 5379 , 973
+2023/02/23 15:33:23 Comparing  0  and  2 raw values: 5379 , 9723
+2023/02/23 15:33:24 Comparing  2  and  3 raw values: 9723 , 4311
+2023/02/23 15:33:25 Comparing  2  and  4 raw values: 9723 , 6870
+2023/02/23 15:33:25 Comparing  2  and  5 raw values: 9723 , 6055
+2023/02/23 15:33:26 Comparing  2  and  6 raw values: 9723 , 3818
+2023/02/23 15:33:27 Total time taken by the auction process: 4.39122169s
+2023/02/23 15:33:27 Winner is  bidder:  3  with bid:  9723
+2023/02/23 15:33:27 Time for calculating the winner: 5.326072714s
+2023/02/23 15:33:27 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:28 Time for calculating the initBiddersRand: 963.694319ms
+2023/02/23 15:33:28 Comparing  0  and  1 raw values: 977 , 6219
+2023/02/23 15:33:29 Comparing  1  and  2 raw values: 6219 , 4009
+2023/02/23 15:33:30 Comparing  1  and  3 raw values: 6219 , 424
+2023/02/23 15:33:31 Comparing  1  and  4 raw values: 6219 , 1401
+2023/02/23 15:33:31 Comparing  1  and  5 raw values: 6219 , 6775
+2023/02/23 15:33:32 Comparing  5  and  6 raw values: 6775 , 8063
+2023/02/23 15:33:33 Total time taken by the auction process: 4.825036472s
+2023/02/23 15:33:33 Winner is  bidder:  7  with bid:  8063
+2023/02/23 15:33:33 Time for calculating the winner: 5.788906694s
+2023/02/23 15:33:33 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:34 Time for calculating the initBiddersRand: 911.85227ms
+2023/02/23 15:33:34 Comparing  0  and  1 raw values: 8931 , 7206
+2023/02/23 15:33:34 Comparing  0  and  2 raw values: 8931 , 426
+2023/02/23 15:33:35 Comparing  0  and  3 raw values: 8931 , 7050
+2023/02/23 15:33:36 Comparing  0  and  4 raw values: 8931 , 1282
+2023/02/23 15:33:37 Comparing  0  and  5 raw values: 8931 , 6709
+2023/02/23 15:33:38 Comparing  0  and  6 raw values: 8931 , 3394
+2023/02/23 15:33:38 Total time taken by the auction process: 4.57851857s
+2023/02/23 15:33:38 Winner is  bidder:  1  with bid:  8931
+2023/02/23 15:33:38 Time for calculating the winner: 5.490671839s
+2023/02/23 15:33:38 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:39 Time for calculating the initBiddersRand: 995.692707ms
+2023/02/23 15:33:39 Comparing  0  and  1 raw values: 8329 , 2159
+2023/02/23 15:33:40 Comparing  0  and  2 raw values: 8329 , 7230
+2023/02/23 15:33:41 Comparing  0  and  3 raw values: 8329 , 1725
+2023/02/23 15:33:41 Comparing  0  and  4 raw values: 8329 , 5201
+2023/02/23 15:33:42 Comparing  0  and  5 raw values: 8329 , 7504
+2023/02/23 15:33:43 Comparing  0  and  6 raw values: 8329 , 9028
+2023/02/23 15:33:43 Total time taken by the auction process: 4.043725612s
+2023/02/23 15:33:43 Winner is  bidder:  7  with bid:  9028
+2023/02/23 15:33:43 Time for calculating the winner: 5.039761098s
+2023/02/23 15:33:44 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:33:45 Time for calculating the initBiddersRand: 972.423623ms
+2023/02/23 15:33:45 Comparing  0  and  1 raw values: 6460 , 7833
+2023/02/23 15:33:45 Comparing  1  and  2 raw values: 7833 , 8395
+2023/02/23 15:33:46 Comparing  2  and  3 raw values: 8395 , 2114
+2023/02/23 15:33:47 Comparing  2  and  4 raw values: 8395 , 7363
+2023/02/23 15:33:47 Comparing  2  and  5 raw values: 8395 , 8971
+2023/02/23 15:33:48 Comparing  5  and  6 raw values: 8971 , 7312
+2023/02/23 15:33:49 Total time taken by the auction process: 4.267931003s
+2023/02/23 15:33:49 Winner is  bidder:  6  with bid:  8971
+2023/02/23 15:33:49 Time for calculating the winner: 5.240572543s
+2023/02/23 15:35:36 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:35:37 Time for calculating the initBiddersRand: 951.688057ms
+2023/02/23 15:35:37 Comparing  0  and  1 raw values: 588 , 8050
+2023/02/23 15:35:38 Comparing  1  and  2 raw values: 8050 , 5173
+2023/02/23 15:35:38 Comparing  1  and  3 raw values: 8050 , 3323
+2023/02/23 15:35:39 Comparing  1  and  4 raw values: 8050 , 4149
+2023/02/23 15:35:40 Comparing  1  and  5 raw values: 8050 , 2375
+2023/02/23 15:35:40 Comparing  1  and  6 raw values: 8050 , 2251
+2023/02/23 15:35:41 Total time taken by the auction process: 4.133182004s
+2023/02/23 15:35:41 Winner is  bidder:  2  with bid:  8050
+2023/02/23 15:35:41 Time for calculating the winner: 5.085048047s
+2023/02/23 15:35:41 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:35:42 Time for calculating the initBiddersRand: 1.003866652s
+2023/02/23 15:35:42 Comparing  0  and  1 raw values: 2334 , 9126
+2023/02/23 15:35:43 Comparing  1  and  2 raw values: 9126 , 5102
+2023/02/23 15:35:44 Comparing  1  and  3 raw values: 9126 , 3938
+2023/02/23 15:35:44 Comparing  1  and  4 raw values: 9126 , 81
+2023/02/23 15:35:45 Comparing  1  and  5 raw values: 9126 , 2954
+2023/02/23 15:35:46 Comparing  1  and  6 raw values: 9126 , 6720
+2023/02/23 15:35:46 Total time taken by the auction process: 4.161928447s
+2023/02/23 15:35:46 Winner is  bidder:  2  with bid:  9126
+2023/02/23 15:35:46 Time for calculating the winner: 5.16607958s
+2023/02/23 15:35:46 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:35:47 Time for calculating the initBiddersRand: 979.033948ms
+2023/02/23 15:35:47 Comparing  0  and  1 raw values: 6184 , 8256
+2023/02/23 15:35:48 Comparing  1  and  2 raw values: 8256 , 4003
+2023/02/23 15:35:49 Comparing  1  and  3 raw values: 8256 , 6328
+2023/02/23 15:35:49 Comparing  1  and  4 raw values: 8256 , 9213
+2023/02/23 15:35:50 Comparing  4  and  5 raw values: 9213 , 527
+2023/02/23 15:35:51 Comparing  4  and  6 raw values: 9213 , 925
+2023/02/23 15:35:52 Total time taken by the auction process: 4.083241153s
+2023/02/23 15:35:52 Winner is  bidder:  5  with bid:  9213
+2023/02/23 15:35:52 Time for calculating the winner: 5.062607009s
+2023/02/23 15:35:52 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:35:53 Time for calculating the initBiddersRand: 918.993007ms
+2023/02/23 15:35:53 Comparing  0  and  1 raw values: 7821 , 6203
+2023/02/23 15:35:53 Comparing  0  and  2 raw values: 7821 , 3529
+2023/02/23 15:35:54 Comparing  0  and  3 raw values: 7821 , 216
+2023/02/23 15:35:55 Comparing  0  and  4 raw values: 7821 , 2000
+2023/02/23 15:35:55 Comparing  0  and  5 raw values: 7821 , 1607
+2023/02/23 15:35:56 Comparing  0  and  6 raw values: 7821 , 8272
+2023/02/23 15:35:57 Total time taken by the auction process: 4.23082817s
+2023/02/23 15:35:57 Winner is  bidder:  7  with bid:  8272
+2023/02/23 15:35:57 Time for calculating the winner: 5.150083153s
+2023/02/23 15:35:57 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:35:58 Time for calculating the initBiddersRand: 931.137195ms
+2023/02/23 15:35:58 Comparing  0  and  1 raw values: 7962 , 5636
+2023/02/23 15:35:58 Comparing  0  and  2 raw values: 7962 , 4672
+2023/02/23 15:35:59 Comparing  0  and  3 raw values: 7962 , 8192
+2023/02/23 15:36:00 Comparing  3  and  4 raw values: 8192 , 6584
+2023/02/23 15:36:00 Comparing  3  and  5 raw values: 8192 , 1144
+2023/02/23 15:36:01 Comparing  3  and  6 raw values: 8192 , 3446
+2023/02/23 15:36:02 Total time taken by the auction process: 3.997772396s
+2023/02/23 15:36:02 Winner is  bidder:  4  with bid:  8192
+2023/02/23 15:36:02 Time for calculating the winner: 4.929217899s
+2023/02/23 15:36:02 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:36:03 Time for calculating the initBiddersRand: 887.346987ms
+2023/02/23 15:36:03 Comparing  0  and  1 raw values: 7226 , 3503
+2023/02/23 15:36:04 Comparing  0  and  2 raw values: 7226 , 4759
+2023/02/23 15:36:04 Comparing  0  and  3 raw values: 7226 , 5144
+2023/02/23 15:36:05 Comparing  0  and  4 raw values: 7226 , 5857
+2023/02/23 15:36:06 Comparing  0  and  5 raw values: 7226 , 9701
+2023/02/23 15:36:06 Comparing  5  and  6 raw values: 9701 , 8415
+2023/02/23 15:36:07 Total time taken by the auction process: 4.057543757s
+2023/02/23 15:36:07 Winner is  bidder:  6  with bid:  9701
+2023/02/23 15:36:07 Time for calculating the winner: 4.945213761s
+2023/02/23 15:36:07 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:36:08 Time for calculating the initBiddersRand: 854.803712ms
+2023/02/23 15:36:08 Comparing  0  and  1 raw values: 8582 , 6226
+2023/02/23 15:36:09 Comparing  0  and  2 raw values: 8582 , 9721
+2023/02/23 15:36:10 Comparing  2  and  3 raw values: 9721 , 8115
+2023/02/23 15:36:11 Comparing  2  and  4 raw values: 9721 , 478
+2023/02/23 15:36:11 Comparing  2  and  5 raw values: 9721 , 7825
+2023/02/23 15:36:12 Comparing  2  and  6 raw values: 9721 , 5591
+2023/02/23 15:36:13 Total time taken by the auction process: 4.937628728s
+2023/02/23 15:36:13 Winner is  bidder:  3  with bid:  9721
+2023/02/23 15:36:13 Time for calculating the winner: 5.792750947s
+2023/02/23 15:36:13 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:36:14 Time for calculating the initBiddersRand: 1.120953251s
+2023/02/23 15:36:14 Comparing  0  and  1 raw values: 6135 , 2259
+2023/02/23 15:36:15 Comparing  0  and  2 raw values: 6135 , 2704
+2023/02/23 15:36:15 Comparing  0  and  3 raw values: 6135 , 5433
+2023/02/23 15:36:16 Comparing  0  and  4 raw values: 6135 , 936
+2023/02/23 15:36:17 Comparing  0  and  5 raw values: 6135 , 7835
+2023/02/23 15:36:17 Comparing  5  and  6 raw values: 7835 , 2248
+2023/02/23 15:36:18 Total time taken by the auction process: 4.22730938s
+2023/02/23 15:36:18 Winner is  bidder:  6  with bid:  7835
+2023/02/23 15:36:18 Time for calculating the winner: 5.348459426s
+2023/02/23 15:36:18 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:36:20 Time for calculating the initBiddersRand: 1.345016583s
+2023/02/23 15:36:20 Comparing  0  and  1 raw values: 3149 , 9169
+2023/02/23 15:36:20 Comparing  1  and  2 raw values: 9169 , 2669
+2023/02/23 15:36:21 Comparing  1  and  3 raw values: 9169 , 5684
+2023/02/23 15:36:22 Comparing  1  and  4 raw values: 9169 , 589
+2023/02/23 15:36:22 Comparing  1  and  5 raw values: 9169 , 2632
+2023/02/23 15:36:23 Comparing  1  and  6 raw values: 9169 , 3644
+2023/02/23 15:36:24 Total time taken by the auction process: 4.189683247s
+2023/02/23 15:36:24 Winner is  bidder:  2  with bid:  9169
+2023/02/23 15:36:24 Time for calculating the winner: 5.535017542s
+2023/02/23 15:36:24 
+KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:36:25 Time for calculating the initBiddersRand: 971.58884ms
+2023/02/23 15:36:25 Comparing  0  and  1 raw values: 3969 , 545
+2023/02/23 15:36:26 Comparing  0  and  2 raw values: 3969 , 4794
+2023/02/23 15:36:26 Comparing  2  and  3 raw values: 4794 , 4471
+2023/02/23 15:36:27 Comparing  2  and  4 raw values: 4794 , 2369
+2023/02/23 15:36:28 Comparing  2  and  5 raw values: 4794 , 9575
+2023/02/23 15:36:28 Comparing  5  and  6 raw values: 9575 , 8856
+2023/02/23 15:36:29 Total time taken by the auction process: 4.017071704s
+2023/02/23 15:36:29 Winner is  bidder:  6  with bid:  9575
+2023/02/23 15:36:29 Time for calculating the winner: 4.988965857s
+2023/02/23 15:37:41 
+iteration: 0 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:37:42 Time for calculating the initBiddersRand: 980.627033ms
+2023/02/23 15:37:42 Comparing  0  and  1 raw values: 5078 , 3671
+2023/02/23 15:37:43 Comparing  0  and  2 raw values: 5078 , 7691
+2023/02/23 15:37:44 Comparing  2  and  3 raw values: 7691 , 1001
+2023/02/23 15:37:44 Comparing  2  and  4 raw values: 7691 , 9168
+2023/02/23 15:37:45 Comparing  4  and  5 raw values: 9168 , 6437
+2023/02/23 15:37:46 Comparing  4  and  6 raw values: 9168 , 5389
+2023/02/23 15:37:46 Total time taken by the auction process: 4.153683573s
+2023/02/23 15:37:46 Winner is  bidder:  5  with bid:  9168
+2023/02/23 15:37:46 Time for calculating the winner: 5.134563556s
+2023/02/23 15:37:46 
+iteration: 1 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:37:47 Time for calculating the initBiddersRand: 876.592968ms
+2023/02/23 15:37:47 Comparing  0  and  1 raw values: 9457 , 9157
+2023/02/23 15:37:48 Comparing  0  and  2 raw values: 9457 , 6891
+2023/02/23 15:37:49 Comparing  0  and  3 raw values: 9457 , 3857
+2023/02/23 15:37:49 Comparing  0  and  4 raw values: 9457 , 8937
+2023/02/23 15:37:50 Comparing  0  and  5 raw values: 9457 , 6505
+2023/02/23 15:37:51 Comparing  0  and  6 raw values: 9457 , 1972
+2023/02/23 15:37:52 Total time taken by the auction process: 4.261855523s
+2023/02/23 15:37:52 Winner is  bidder:  1  with bid:  9457
+2023/02/23 15:37:52 Time for calculating the winner: 5.138673481s
+2023/02/23 15:37:52 
+iteration: 2 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:37:53 Time for calculating the initBiddersRand: 884.503319ms
+2023/02/23 15:37:53 Comparing  0  and  1 raw values: 2688 , 5021
+2023/02/23 15:37:53 Comparing  1  and  2 raw values: 5021 , 8711
+2023/02/23 15:37:54 Comparing  2  and  3 raw values: 8711 , 4012
+2023/02/23 15:37:55 Comparing  2  and  4 raw values: 8711 , 5642
+2023/02/23 15:37:55 Comparing  2  and  5 raw values: 8711 , 7582
+2023/02/23 15:37:56 Comparing  2  and  6 raw values: 8711 , 7103
+2023/02/23 15:37:57 Total time taken by the auction process: 4.156809613s
+2023/02/23 15:37:57 Winner is  bidder:  3  with bid:  8711
+2023/02/23 15:37:57 Time for calculating the winner: 5.041593978s
+2023/02/23 15:37:57 
+iteration: 3 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:37:58 Time for calculating the initBiddersRand: 1.002091195s
+2023/02/23 15:37:58 Comparing  0  and  1 raw values: 9037 , 4142
+2023/02/23 15:37:59 Comparing  0  and  2 raw values: 9037 , 9011
+2023/02/23 15:38:00 Comparing  0  and  3 raw values: 9037 , 678
+2023/02/23 15:38:00 Comparing  0  and  4 raw values: 9037 , 3720
+2023/02/23 15:38:01 Comparing  0  and  5 raw values: 9037 , 2954
+2023/02/23 15:38:02 Comparing  0  and  6 raw values: 9037 , 7121
+2023/02/23 15:38:02 Total time taken by the auction process: 4.646745451s
+2023/02/23 15:38:02 Winner is  bidder:  1  with bid:  9037
+2023/02/23 15:38:02 Time for calculating the winner: 5.649201068s
+2023/02/23 15:38:03 
+iteration: 4 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:04 Time for calculating the initBiddersRand: 995.254885ms
+2023/02/23 15:38:04 Comparing  0  and  1 raw values: 6319 , 6077
+2023/02/23 15:38:04 Comparing  0  and  2 raw values: 6319 , 6538
+2023/02/23 15:38:05 Comparing  2  and  3 raw values: 6538 , 5947
+2023/02/23 15:38:06 Comparing  2  and  4 raw values: 6538 , 4513
+2023/02/23 15:38:06 Comparing  2  and  5 raw values: 6538 , 4608
+2023/02/23 15:38:07 Comparing  2  and  6 raw values: 6538 , 8366
+2023/02/23 15:38:08 Total time taken by the auction process: 4.421034407s
+2023/02/23 15:38:08 Winner is  bidder:  7  with bid:  8366
+2023/02/23 15:38:08 Time for calculating the winner: 5.416616409s
+2023/02/23 15:38:08 
+iteration: 5 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:09 Time for calculating the initBiddersRand: 878.277931ms
+2023/02/23 15:38:09 Comparing  0  and  1 raw values: 3145 , 2162
+2023/02/23 15:38:10 Comparing  0  and  2 raw values: 3145 , 8088
+2023/02/23 15:38:10 Comparing  2  and  3 raw values: 8088 , 6691
+2023/02/23 15:38:11 Comparing  2  and  4 raw values: 8088 , 5191
+2023/02/23 15:38:12 Comparing  2  and  5 raw values: 8088 , 9937
+2023/02/23 15:38:12 Comparing  5  and  6 raw values: 9937 , 1693
+2023/02/23 15:38:13 Total time taken by the auction process: 4.245913476s
+2023/02/23 15:38:13 Winner is  bidder:  6  with bid:  9937
+2023/02/23 15:38:13 Time for calculating the winner: 5.124416887s
+2023/02/23 15:38:13 
+iteration: 6 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:14 Time for calculating the initBiddersRand: 904.903493ms
+2023/02/23 15:38:14 Comparing  0  and  1 raw values: 3867 , 8706
+2023/02/23 15:38:15 Comparing  1  and  2 raw values: 8706 , 7458
+2023/02/23 15:38:16 Comparing  1  and  3 raw values: 8706 , 1625
+2023/02/23 15:38:17 Comparing  1  and  4 raw values: 8706 , 2173
+2023/02/23 15:38:17 Comparing  1  and  5 raw values: 8706 , 4537
+2023/02/23 15:38:18 Comparing  1  and  6 raw values: 8706 , 6160
+2023/02/23 15:38:19 Total time taken by the auction process: 4.653292765s
+2023/02/23 15:38:19 Winner is  bidder:  2  with bid:  8706
+2023/02/23 15:38:19 Time for calculating the winner: 5.558496882s
+2023/02/23 15:38:19 
+iteration: 7 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:20 Time for calculating the initBiddersRand: 843.894858ms
+2023/02/23 15:38:20 Comparing  0  and  1 raw values: 2190 , 6379
+2023/02/23 15:38:20 Comparing  1  and  2 raw values: 6379 , 3160
+2023/02/23 15:38:21 Comparing  1  and  3 raw values: 6379 , 9970
+2023/02/23 15:38:22 Comparing  3  and  4 raw values: 9970 , 6150
+2023/02/23 15:38:23 Comparing  3  and  5 raw values: 9970 , 8165
+2023/02/23 15:38:23 Comparing  3  and  6 raw values: 9970 , 1739
+2023/02/23 15:38:24 Total time taken by the auction process: 4.438007671s
+2023/02/23 15:38:24 Winner is  bidder:  4  with bid:  9970
+2023/02/23 15:38:24 Time for calculating the winner: 5.28218138s
+2023/02/23 15:38:24 
+iteration: 8 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:25 Time for calculating the initBiddersRand: 898.115438ms
+2023/02/23 15:38:25 Comparing  0  and  1 raw values: 9681 , 6209
+2023/02/23 15:38:26 Comparing  0  and  2 raw values: 9681 , 306
+2023/02/23 15:38:27 Comparing  0  and  3 raw values: 9681 , 6188
+2023/02/23 15:38:28 Comparing  0  and  4 raw values: 9681 , 5789
+2023/02/23 15:38:28 Comparing  0  and  5 raw values: 9681 , 9176
+2023/02/23 15:38:29 Comparing  0  and  6 raw values: 9681 , 1479
+2023/02/23 15:38:30 Total time taken by the auction process: 4.554134006s
+2023/02/23 15:38:30 Winner is  bidder:  1  with bid:  9681
+2023/02/23 15:38:30 Time for calculating the winner: 5.452405793s
+2023/02/23 15:38:30 
+iteration: 9 KEYBITS: 1024 	 MSGSPACE: 100000000 	 NUM_BIDDERS: 7 	 MAX_RAND: 1000 	 MAX_BID: 10000
+2023/02/23 15:38:31 Time for calculating the initBiddersRand: 1.072666087s
+2023/02/23 15:38:31 Comparing  0  and  1 raw values: 6652 , 8789
+2023/02/23 15:38:32 Comparing  1  and  2 raw values: 8789 , 7730
+2023/02/23 15:38:32 Comparing  1  and  3 raw values: 8789 , 9238
+2023/02/23 15:38:33 Comparing  3  and  4 raw values: 9238 , 6200
+2023/02/23 15:38:34 Comparing  3  and  5 raw values: 9238 , 8472
+2023/02/23 15:38:34 Comparing  3  and  6 raw values: 9238 , 2269
+2023/02/23 15:38:35 Total time taken by the auction process: 4.111301447s
+2023/02/23 15:38:35 Winner is  bidder:  4  with bid:  9238
+2023/02/23 15:38:35 Time for calculating the winner: 5.184306559s

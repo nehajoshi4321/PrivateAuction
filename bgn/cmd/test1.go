@@ -10,6 +10,7 @@ import (
         "bufio"
         "strconv"
         "strings"
+        "runtime"
 )
 
 
@@ -174,62 +175,25 @@ func readConfig(filename string) error {
 		name := parts[0]
 		valueStr := parts[1]
 
-		// Convert the value string to the appropriate type
-		var value interface{}
-		if strings.HasPrefix(valueStr, "0x") {
-			// Hexadecimal number
-			n, err := strconv.ParseUint(valueStr[2:], 16, 64)
-			if err != nil {
-				fmt.Println("Invalid value:", valueStr)
-				continue
-			}
-			value = n
-		} else if strings.HasPrefix(valueStr, "0") {
-			// Octal number
-			n, err := strconv.ParseUint(valueStr[1:], 8, 64)
-			if err != nil {
-				fmt.Println("Invalid value:", valueStr)
-				continue
-			}
-			value = n
-		} else if strings.HasPrefix(valueStr, "0b") {
-			// Binary number
-			n, err := strconv.ParseUint(valueStr[2:], 2, 64)
-			if err != nil {
-				fmt.Println("Invalid value:", valueStr)
-				continue
-			}
-			value = n
-		} else if strings.Contains(valueStr, ".") {
-			// Floating-point number
-			f, err := strconv.ParseFloat(valueStr, 64)
-			if err != nil {
-				fmt.Println("Invalid value:", valueStr)
-				continue
-			}
-			value = f
-		} else {
-			// Integer
-			n, err := strconv.ParseInt(valueStr, 10, 64)
-			if err != nil {
-				fmt.Println("Error converting value:", valueStr)
-				continue
-			}
-			value = n
+		// Convert the value string to an integer
+		value, err := strconv.ParseInt(valueStr, 10, 64)
+		if err != nil {
+		   fmt.Println("Error converting value:", valueStr)
+		   continue
 		}
 
 		// Assign the value to the appropriate variable
 		switch name {
 		case "KEYBITS":
-			KEYBITS = int(value.(int64))
+			KEYBITS = int(value)
 		case "MSGSPACE":
-			MSGSPACE = value.(int64)
+			MSGSPACE = value
 		case "NUM_BIDDERS":
-			NUM_BIDDERS = int(value.(int64))
+			NUM_BIDDERS = int(value)
 		case "MAX_RAND":
-			MAX_RAND = value.(int64)
+			MAX_RAND = value
 		case "MAX_BID":
-			MAX_BID = value.(int64)
+			MAX_BID = value
 		default:
 			fmt.Println("Unknown variable:", name)
 		}
@@ -241,46 +205,61 @@ func readConfig(filename string) error {
 
 func main() {
 
-        // Read the variables from the file
-        	if err := readConfig("Input.txt"); err != nil {
-        		fmt.Println("Error reading config:", err)
-        		return
-        	}
+        n := 10 // number of times to run the code
+        var totalTime time.Duration = 0
+        memory := uint64(0)
+           for i := 0; i < n; i++ {
+               start := time.Now()
+               // code to be executed n times
+               // Read the variables from the file
+                       	if err := readConfig("Input.txt"); err != nil {
+                       		fmt.Println("Error reading config:", err)
+                       		return
+                       	}
 
-        	// Print the values of the variables
-        	fmt.Println("KEYBITS:", KEYBITS)
-        	fmt.Println("MSGSPACE:", MSGSPACE)
-        	fmt.Println("NUM_BIDDERS:", NUM_BIDDERS)
-        	fmt.Println("MAX_RAND:", MAX_RAND)
-        	fmt.Println("MAX_BID:", MAX_BID)
+                       file, e := os.OpenFile("output.txt", os.O_CREATE | os.O_WRONLY | os.O_APPEND, 0666)
+
+                       if e !=nil{
+                        log.Print(e.Error() + "\r\n")
+
+                       }
+
+                       log.SetOutput(file)
+
+                       //log.Println("\n MSGSPACE, MAX_RAND, MAX_BID", MSGSPACE, ", ", MAX_RAND, ", ", MAX_BID)
+                       // Print the values of the variables
+                       log.Println("\niteration:", i,  "KEYBITS:", KEYBITS ,"\t MSGSPACE:", MSGSPACE,"\t NUM_BIDDERS:", NUM_BIDDERS,
+                                                   "\t MAX_RAND:", MAX_RAND,"\t MAX_BID:", MAX_BID)
+                       //log.Println("MSGSPACE:", MSGSPACE)
+
+                       // Initializing the seed using current time for random number generation.
+                       rand.Seed(time.Now().UnixNano())
+                       bidders := make([]Bidder, NUM_BIDDERS)
+                       // Initializing the bidders. Generating plaintext bids and public-private key pair.
+                       // Static bid values for reproducing error
+                               // values :=  []int64{825616, 54460, 857406, 129782, 181565, 552263, 258629}
+                       // initBidders(bidders, values)
+                               initBiddersRand(bidders)
+
+                       // Performing auction
+                       var winnerIdx = auction(bidders)
+                       log.Println("Winner is  bidder: ", bidders[winnerIdx].identity, " with bid: " , bidders[winnerIdx].bid)
+                       elapsed := time.Since(start)
+                       log.Printf("Time for calculating the winner: %s", elapsed)
+
+               var m runtime.MemStats
+               runtime.ReadMemStats(&m)
+               memory +=m.Alloc
+
+               time.Sleep(time.Millisecond * 100) // example code that takes 100 milliseconds to execute
+               end := time.Now()
+               totalTime += end.Sub(start)
 
 
-
-
-        file, e := os.OpenFile("output.txt", os.O_CREATE | os.O_WRONLY | os.O_APPEND, 0666)
-
-        if e !=nil{
-          log.Fatalln("failed")
+           }
+           averageTime := totalTime / time.Duration(n)
+           fmt.Println("Average execution time:", averageTime)
+           avgMemory := float64(memory)/ float64(n)
+           fmt.Printf("amount of memory currently allocated by the code = %.2f MB\n", avgMemory/1024/1024)
 
         }
-
-        log.SetOutput(file)
-
-        start := time.Now()
-        log.Println("MSGSPACE, MAX_RAND, MAX_BID", MSGSPACE, ", ", MAX_RAND, ", ", MAX_BID)
-
-        // Initializing the seed using current time for random number generation.
-        rand.Seed(time.Now().UnixNano())
-        bidders := make([]Bidder, NUM_BIDDERS)
-        // Initializing the bidders. Generating plaintext bids and public-private key pair.
-        // Static bid values for reproducing error
-                // values :=  []int64{825616, 54460, 857406, 129782, 181565, 552263, 258629}
-        // initBidders(bidders, values)
-                initBiddersRand(bidders)
-
-        // Performing auction
-        var winnerIdx = auction(bidders)
-        log.Println("Winner is  bidder: ", bidders[winnerIdx].identity, " with bid: " , bidders[winnerIdx].bid)
-        elapsed := time.Since(start)
-        log.Printf("Time for calculating the winner: %s", elapsed)
-}

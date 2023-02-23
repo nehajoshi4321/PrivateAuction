@@ -9,9 +9,9 @@ import (
 )
 
 var (
-	KEYBITS     int64
+	KEYBITS     int
 	MSGSPACE    int64
-	NUM_BIDDERS int64
+	NUM_BIDDERS int
 	MAX_RAND    int64
 	MAX_BID     int64
 )
@@ -53,8 +53,8 @@ func readConfig(filename string) error {
 		valueStr := parts[1]
 
 		// Convert the value string to the appropriate type
-		var value interface{}
-		if strings.HasPrefix(valueStr, "0x") {
+		//var value int64 //interface{}
+		/* if strings.HasPrefix(valueStr, "0x") {
 			// Hexadecimal number
 			n, err := strconv.ParseUint(valueStr[2:], 16, 64)
 			if err != nil {
@@ -86,28 +86,28 @@ func readConfig(filename string) error {
 				continue
 			}
 			value = f
-		} else {
+		} else { */
 			// Integer
-			n, err := strconv.ParseInt(valueStr, 10, 64)
+			value, err := strconv.ParseInt(valueStr, 10, 64)
 			if err != nil {
 				fmt.Println("Error converting value:", valueStr)
 				continue
 			}
-			value = n
-		}
+		
+		//}
 
 		// Assign the value to the appropriate variable
 		switch name {
 		case "KEYBITS":
-			KEYBITS = int(value.(int64))
+			KEYBITS = value
 		case "MSGSPACE":
-			MSGSPACE = value.(int64)
+			MSGSPACE = value
 		case "NUM_BIDDERS":
-			NUM_BIDDERS = int(value.(int64))
+			NUM_BIDDERS = value
 		case "MAX_RAND":
-			MAX_RAND = value.(int64)
+			MAX_RAND = value
 		case "MAX_BID":
-			MAX_BID = value.(int64)
+			MAX_BID = value
 		default:
 			fmt.Println("Unknown variable:", name)
 		}
