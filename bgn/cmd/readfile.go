@@ -87,13 +87,13 @@ func readConfig(filename string) error {
 			}
 			value = f
 		} else { */
-			// Integer
-			value, err := strconv.ParseInt(valueStr, 10, 64)
-			if err != nil {
-				fmt.Println("Error converting value:", valueStr)
-				continue
-			}
-		
+		// Integer
+		value, err := strconv.ParseInt(valueStr, 10, 64)
+		if err != nil {
+			fmt.Println("Error converting value:", valueStr)
+			continue
+		}
+
 		//}
 
 		// Assign the value to the appropriate variable
@@ -115,4 +115,3 @@ func readConfig(filename string) error {
 
 	return nil
 }
-

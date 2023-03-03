@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 	"math/big"
-    //  "math/rand"
-      // "log"
-       "log"
+	//  "math/rand"
+	// "log"
 	"github.com/sachaservan/bgn"
+	"log"
+	"math/rand"
 	"time"
-    	"math/rand"
 	//"time"
 	//"miracl/core/BN254"
-    "os"
-    "io"
+	"io"
+	"os"
 )
 
 const KEYBITS = 512
@@ -21,7 +21,6 @@ const MSGSPACE = 10000 // message space for polynomial coefficients
 const FPSCALEBASE = 3
 const FPPREC = 0.0001
 const DET = true // deterministic ops
-
 
 /*func main() {
 
@@ -37,12 +36,12 @@ const DET = true // deterministic ops
 	r2aa :=30
 	r1bb :=3
 	r2bb :=8
-	
+
 
 	//runSimpleCheck(keyBits, polyBase)
 	//runPolyArithmeticCheck(keyBits, messageSpace, polyBase, fpScaleBase, fpPrecision)
 	auction_value :=auction_bid(bids, r1aa, r2aa, r1bb, r2bb)
-	
+
 	fmt.Println(auction_value)
 }
 
@@ -62,232 +61,226 @@ func printWelcome() {
 
 }
 func auction_bid(bid int, r1a int, r2a int, r1b int, r2b int) big.Int {
-         
-          start := time.Now()
-          pk, sk, err := bgn.NewKeyGen(KEYBITS, big.NewInt(MSGSPACE), POLYBASE, FPSCALEBASE, FPPREC, DET)
+
+	start := time.Now()
+	pk, sk, err := bgn.NewKeyGen(KEYBITS, big.NewInt(MSGSPACE), POLYBASE, FPSCALEBASE, FPPREC, DET)
 	if err != nil {
 		panic(err)
 	}
 	bgn.ComputeDecryptionPreprocessing(pk, sk)
-	
+
 	//encrypting a bid
 	c1_a := pk.Encrypt(big.NewInt(int64(bid)))
 	//encrypting r_1(A)
 	c2_a := pk.Encrypt(big.NewInt(int64(r1a)))
 	//encrypting r_2(A)
 	c3_a := pk.Encrypt(big.NewInt(int64(r2a)))
-	
+
 	//encrypting r_1(B)
 	c2_b := (pk.Encrypt(big.NewInt(int64(r1b))))
 	//encrypting r_2(B)
 	c3_b := (pk.Encrypt(big.NewInt(int64(r2b))))
-	
+
 	//Add r_1(A) and r_2(A)
-	c4_a :=pk.Add(c2_a, c2_b)
-	
-	//multiply r_1(A) and r_2(A) with encrypted bid 
-	c5_a :=pk.Mult(c1_a, c4_a)
-	
-	
-	
+	c4_a := pk.Add(c2_a, c2_b)
+
+	//multiply r_1(A) and r_2(A) with encrypted bid
+	c5_a := pk.Mult(c1_a, c4_a)
+
 	//Add r_1(B) and r_2(B)
-	c4_b :=pk.Mult(c3_a, c3_b)
-	
-	//multiply r_1(B) and r_2(B) with overall encrypted bid 
-	c5_b :=pk.Add(c5_a, c4_b)
-	
+	c4_b := pk.Mult(c3_a, c3_b)
+
+	//multiply r_1(B) and r_2(B) with overall encrypted bid
+	c5_b := pk.Add(c5_a, c4_b)
+
 	//final user encrypted bid
 	//bid := sk.DecryptFailSafe(c5_b, pk)
-	
-	
+
 	d := sk.DecryptFailSafe(c1_a, pk)
 	c := sk.DecryptFailSafe(c4_a, pk)
 	e := sk.DecryptFailSafe(c5_a, pk)
 	f := sk.DecryptFailSafe(c4_b, pk)
 	g := sk.DecryptFailSafe(c5_b, pk)
-	
-	fmt.Println("working",d.String())
+
+	fmt.Println("working", d.String())
 	//fmt.Println("working",bid.String())
-	fmt.Println("working",c.String())
-	fmt.Println("working",e.String())
-	fmt.Println("working",f.String())
-	fmt.Println("working",g.String())
-	
-	 elapsed := time.Since(start)
-    log.Printf("time %s", elapsed)
-         return *g
-                 
+	fmt.Println("working", c.String())
+	fmt.Println("working", e.String())
+	fmt.Println("working", f.String())
+	fmt.Println("working", g.String())
+
+	elapsed := time.Since(start)
+	log.Printf("time %s", elapsed)
+	return *g
+
 }
 
 //auction operation
 func auction_winner(dslice []big.Int) big.Int {
-   //fmt.Println("Domain bid:", dslice)
-   //to find the min bid value among domains
-   //var min big.Int
-   min := dslice[0]
-   size :=len(dslice)
- // var x *big.Int
- // var y *big.Int
-  
-     for i:=0; i < size; i++ {
-     	fmt.Println("%d ", dslice[i])
-        
-        //x= &dslice[i]
-      //y= *x.Cmp(&min)
-       
-       // adr_mul= & domain_slice[i][j]
-              // adr_mul.Mul(adr_mul, &(num[i]))
-       // dslice[i] > min
-        //if (dslice[i] < min) {
-        //    
-        //    min = dslice[i]
-        //}
-   
-}
-  fmt.Println("maximum bid: %d", min)
-    return min
+	//fmt.Println("Domain bid:", dslice)
+	//to find the min bid value among domains
+	//var min big.Int
+	min := dslice[0]
+	size := len(dslice)
+	// var x *big.Int
+	// var y *big.Int
+
+	for i := 0; i < size; i++ {
+		fmt.Println("%d ", dslice[i])
+
+		//x= &dslice[i]
+		//y= *x.Cmp(&min)
+
+		// adr_mul= & domain_slice[i][j]
+		// adr_mul.Mul(adr_mul, &(num[i]))
+		// dslice[i] > min
+		//if (dslice[i] < min) {
+		//
+		//    min = dslice[i]
+		//}
+
+	}
+	fmt.Println("maximum bid: %d", min)
+	return min
 }
 
 func readFile(filePath string) (numbers []int) {
-    fd, err := os.Open(filePath)
-    if err != nil {
-        panic(fmt.Sprintf("open %s: %v", filePath, err))
-    }
-    var line int
-    for {
+	fd, err := os.Open(filePath)
+	if err != nil {
+		panic(fmt.Sprintf("open %s: %v", filePath, err))
+	}
+	var line int
+	for {
 
-        _, err := fmt.Fscanf(fd, "%d\n", &line)
+		_, err := fmt.Fscanf(fd, "%d\n", &line)
 
-        if err != nil {
-            fmt.Println(err)
-            if err == io.EOF {
-                return
-            }
-            panic(fmt.Sprintf("Scan Failed %s: %v", filePath, err))
+		if err != nil {
+			fmt.Println(err)
+			if err == io.EOF {
+				return
+			}
+			panic(fmt.Sprintf("Scan Failed %s: %v", filePath, err))
 
-        }
-        numbers = append(numbers, line)
-    }
-    return
+		}
+		numbers = append(numbers, line)
+	}
+	return
 }
 
+func optimal_domain(dom int, para int) []big.Int {
 
-func optimal_domain(dom int, para int) []big.Int{
+	//generate random integers
+	rand.Seed(time.Now().UnixNano())
+	//cost bid of resources
+	// c_min := 1
+	//c_max := 10000000
+	//bandwidth of resources(in mbps)
+	p_min := 0
+	p_max := 1000
+	//generate random numbers for both parties
+	r1aa := rand.Int()
+	r2aa := rand.Int()
+	r1bb := rand.Int()
+	r2bb := rand.Int()
 
-//generate random integers
-    rand.Seed(time.Now().UnixNano())
-   //cost bid of resources
-   // c_min := 1
-    //c_max := 10000000
-   //bandwidth of resources(in mbps)
-    p_min := 0
-    p_max := 1000
-    //generate random numbers for both parties
-    r1aa :=rand.Int()
-	r2aa :=rand.Int()
-	r1bb :=rand.Int()
-	r2bb :=rand.Int()
-  
-    // no. of domain
-    //var n, m int
-    //var bw_weight int
-   // var latency_weight int
-   // var ploss_weight int
-   
-   // fmt.Print("enter no. of domains=") 
-  //  fmt.Scanln(&m)
-   //  fmt.Print("enter no. of parameters=") 
-   // fmt.Scanln(&n)
-    //weightage given to various parameter for resources
- //   fmt.Print("assign weight to the parameters:")
-  /*   fmt.Scanln(&bw_weight)
-     fmt.Scanln(&latency_weight)
-     fmt.Scanln(&ploss_weight)  */
-     fmt.Print("\n")
-    fmt.Println("******Assigning bids to the domains******") 
-     fmt.Print("\n")
-    domain_slice := [][]big.Int{}
-  //  var bid_array[5] int
-    
-    //assign bid to the domain
-    for i:=0; i<para; i++ {
-         p_row := make([]big.Int, dom)
-          for j:=0; j<dom; j++ {
-              // domain_slice[i][j]= rand.Intn(p_max - p_min + 1) + p_min
-                bids:= rand.Intn(p_max - p_min + 1) + p_min
-                p_row[j]= auction_bid(bids, r1aa, r2aa, r1bb, r2bb)
-                 }
-                  //fmt.Println("Printing current Row", p_row)
-          domain_slice = append(domain_slice, p_row)
-        
-                 }
-                  fmt.Println("----Printing current 2d array----")
-                 fmt.Println(domain_slice) 
-                 
-                  fmt.Print("\n")
-                 fmt.Println("******Adding weight to the bids of the domains******") 
-                   fmt.Println("===weights w.r.t to various parameters===")
-                   num :=make([]big.Int, para)
-    
-            for i := 0; i < 100; i++{
-              //num[rand.Intn(para)]++  
-        }
-        fmt.Println(num)
-        
-        var adr *big.Int
-        var adr_mul *big.Int
-     //  fmt.Println("Printing current 2d array", domain_slice[0][0]) 
-            //domain_slice1 := [][]int{}
-           for i:=0; i<para; i++ {
-               for j:=0; j<dom; j++ {
-               adr_mul= & domain_slice[i][j]
-               adr_mul.Mul(adr_mul, &(num[i]))
-              //domain_slice[i][j]= domain_slice[i][j] * num[i]
-               //p_row[j] = p_row[j]* num[j]
-             
-                }
-                
-                }
-                fmt.Print("\n")
-                fmt.Println("----Printing current 2d weighted array----")
-                 fmt.Println(domain_slice)
-                  fmt.Print("\n")
-                  
-         fmt.Println("----selection of optimal domain----")
-          fmt.Print("\n")
-         // domain_sum:=0
-          domain_sum :=make([]big.Int, dom)
-          
-            for i:=0; i<para; i++ {
-            //sum :=0
-               for j:=0; j<dom; j++ {
-               adr= & domain_sum[j]
-               adr.Add(adr, &(domain_slice[i][j]))
-                //domain_sum[j] = domain_sum[j] + domain_slice[i][j]
-      // sum = sum + domain_slice[i][j]
-               // fmt.Println("The Sum of Each Column Item in a Matrix  = ", domain_sum)
-       }
-    
-        }
-         fmt.Println(domain_sum)
-         
-        fmt.Print("\n")
-            //MDO performs auction operation   
-          
-    return domain_sum
-   
+	// no. of domain
+	//var n, m int
+	//var bw_weight int
+	// var latency_weight int
+	// var ploss_weight int
 
-    } 
- 
+	// fmt.Print("enter no. of domains=")
+	//  fmt.Scanln(&m)
+	//  fmt.Print("enter no. of parameters=")
+	// fmt.Scanln(&n)
+	//weightage given to various parameter for resources
+	//   fmt.Print("assign weight to the parameters:")
+	/*   fmt.Scanln(&bw_weight)
+	     fmt.Scanln(&latency_weight)
+	     fmt.Scanln(&ploss_weight)  */
+	fmt.Print("\n")
+	fmt.Println("******Assigning bids to the domains******")
+	fmt.Print("\n")
+	domain_slice := [][]big.Int{}
+	//  var bid_array[5] int
+
+	//assign bid to the domain
+	for i := 0; i < para; i++ {
+		p_row := make([]big.Int, dom)
+		for j := 0; j < dom; j++ {
+			// domain_slice[i][j]= rand.Intn(p_max - p_min + 1) + p_min
+			bids := rand.Intn(p_max-p_min+1) + p_min
+			p_row[j] = auction_bid(bids, r1aa, r2aa, r1bb, r2bb)
+		}
+		//fmt.Println("Printing current Row", p_row)
+		domain_slice = append(domain_slice, p_row)
+
+	}
+	fmt.Println("----Printing current 2d array----")
+	fmt.Println(domain_slice)
+
+	fmt.Print("\n")
+	fmt.Println("******Adding weight to the bids of the domains******")
+	fmt.Println("===weights w.r.t to various parameters===")
+	num := make([]big.Int, para)
+
+	for i := 0; i < 100; i++ {
+		//num[rand.Intn(para)]++
+	}
+	fmt.Println(num)
+
+	var adr *big.Int
+	var adr_mul *big.Int
+	//  fmt.Println("Printing current 2d array", domain_slice[0][0])
+	//domain_slice1 := [][]int{}
+	for i := 0; i < para; i++ {
+		for j := 0; j < dom; j++ {
+			adr_mul = &domain_slice[i][j]
+			adr_mul.Mul(adr_mul, &(num[i]))
+			//domain_slice[i][j]= domain_slice[i][j] * num[i]
+			//p_row[j] = p_row[j]* num[j]
+
+		}
+
+	}
+	fmt.Print("\n")
+	fmt.Println("----Printing current 2d weighted array----")
+	fmt.Println(domain_slice)
+	fmt.Print("\n")
+
+	fmt.Println("----selection of optimal domain----")
+	fmt.Print("\n")
+	// domain_sum:=0
+	domain_sum := make([]big.Int, dom)
+
+	for i := 0; i < para; i++ {
+		//sum :=0
+		for j := 0; j < dom; j++ {
+			adr = &domain_sum[j]
+			adr.Add(adr, &(domain_slice[i][j]))
+			//domain_sum[j] = domain_sum[j] + domain_slice[i][j]
+			// sum = sum + domain_slice[i][j]
+			// fmt.Println("The Sum of Each Column Item in a Matrix  = ", domain_sum)
+		}
+
+	}
+	fmt.Println(domain_sum)
+
+	fmt.Print("\n")
+	//MDO performs auction operation
+
+	return domain_sum
+
+}
 
 func main() {
-           var m,n int
-         
-         //r1aa :=rand.Int()
+	var m, n int
+
+	//r1aa :=rand.Int()
 	//r2aa :=rand.Int()
 	//r1bb :=rand.Int()
 	//r2bb :=rand.Int()
-	
+
 	printWelcome()
 
 	//keyBits := 512 // length of q1 and q2
@@ -296,37 +289,28 @@ func main() {
 	//fpScaleBase := 3
 	//fpPrecision := 0.0001
 
-	
-
 	//runSimpleCheck(keyBits, polyBase)
 	//runPolyArithmeticCheck(keyBits, messageSpace, polyBase, fpScaleBase, fpPrecision)
-	
-         
-           numbers := readFile("foo.in.txt")
-         //  fmt.Println(numbers[0])
-          m= numbers[0]
-          n= numbers[1]
-          fmt.Println("no. of domains are:", m)
-           fmt.Println("no. of parameters are:",n)
-          opt_domain_array :=optimal_domain(m, n)   
-          
-          
-          
-    min_bid :=auction_winner( opt_domain_array)
- fmt.Printf("Maximum bid: %d", min_bid)
 
-    } 
-   
-   //user bids
-   
-   
-   // fmt.Println(domain_slice)
-    
-   
- //  min_bid :=auction(domain_slice)
-  // fmt.Printf("Minimum bid: %d", min_bid)
-    
+	numbers := readFile("foo.in.txt")
+	//  fmt.Println(numbers[0])
+	m = numbers[0]
+	n = numbers[1]
+	fmt.Println("no. of domains are:", m)
+	fmt.Println("no. of parameters are:", n)
+	opt_domain_array := optimal_domain(m, n)
 
+	min_bid := auction_winner(opt_domain_array)
+	fmt.Printf("Maximum bid: %d", min_bid)
+
+}
+
+//user bids
+
+// fmt.Println(domain_slice)
+
+//  min_bid :=auction(domain_slice)
+// fmt.Printf("Minimum bid: %d", min_bid)
 
 /*
 func auctionencoding() {
@@ -339,48 +323,48 @@ func auctionencoding() {
 		panic(err)
 	}
 	bgn.ComputeDecryptionPreprocessing(pk, sk)
-	
+
 	//encrypting a bid
 	c1_a := pk.Encrypt(big.NewInt(int64(bid)))
 	//encrypting r_1(A)
 	c2_a := pk.Encrypt(big.NewInt(40))
 	//encrypting r_2(A)
 	c3_a := pk.Encrypt(big.NewInt(2))
-	
+
 	//Add r_1(A) and r_2(A)
 	c4_a :=pk.Add(c2_a, c3_a)
-	
-	//multiply r_1(A) and r_2(A) with encrypted bid 
+
+	//multiply r_1(A) and r_2(A) with encrypted bid
 	c5_a :=pk.Mult(c1_a, c4_a)
-	
+
 	//encrypting r_1(B)
 	c2_b := (pk.Encrypt(big.NewInt(5)))
 	//encrypting r_2(B)
 	c3_b := (pk.Encrypt(big.NewInt(300)))
-	
+
 	//Add r_1(B) and r_2(B)
 	c4_b :=pk.Mult(c2_b, c3_b)
-	
-	//multiply r_1(B) and r_2(B) with overall encrypted bid 
+
+	//multiply r_1(B) and r_2(B) with overall encrypted bid
 	c5_b :=pk.Add(c5_a, c4_b)
-	
+
 	//final user encrypted bid
 	//bid := sk.DecryptFailSafe(c5_b, pk)
-	
-	
+
+
 	d := sk.DecryptFailSafe(c1_a, pk)
 	c := sk.DecryptFailSafe(c4_a, pk)
 	e := sk.DecryptFailSafe(c5_a, pk)
 	f := sk.DecryptFailSafe(c4_b, pk)
 	g := sk.DecryptFailSafe(c5_b, pk)
-	
+
 	fmt.Println("working",d.String())
 	//fmt.Println("working",bid.String())
 	fmt.Println("working",c.String())
 	fmt.Println("working",e.String())
 	fmt.Println("working",f.String())
 	fmt.Println("working",g.String())
-	
+
 }
 func runPolyArithmeticCheck(keyBits int, messageSpace *big.Int, polyBase int, fpScaleBase int, fpPrecision float64) {
 

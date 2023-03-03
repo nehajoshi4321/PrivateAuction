@@ -1,0 +1,76 @@
+2023/02/25 00:59:39 
+Iteration: 0 keyBitLength: 1024 	 msgSpace: 100 	 numBidders: 10 	 randPercent: 10 	 maxBid: 100
+2023/02/25 00:59:40 Numbidders:  10
+2023/02/25 00:59:40 Comparing  0  and  1 raw values: 5 , 94
+2023/02/25 00:59:41 decodedWinner:  41   :::: decodedPartyB:  0
+2023/02/25 00:59:41 Comparing  0  and  2 raw values: 5 , 53
+2023/02/25 00:59:41 decodedWinner:  103   :::: decodedPartyB:  0
+2023/02/25 00:59:41 Comparing  0  and  3 raw values: 5 , 46
+2023/02/25 00:59:41 decodedWinner:  96   :::: decodedPartyB:  0
+2023/02/25 00:59:41 Comparing  0  and  4 raw values: 5 , 59
+2023/02/25 00:59:42 decodedWinner:  50   :::: decodedPartyB:  0
+2023/02/25 00:59:42 Comparing  0  and  5 raw values: 5 , 49
+2023/02/25 00:59:42 decodedWinner:  42   :::: decodedPartyB:  0
+2023/02/25 00:59:42 Comparing  0  and  6 raw values: 5 , 39
+2023/02/25 00:59:42 decodedWinner:  92   :::: decodedPartyB:  0
+2023/02/25 00:59:42 Comparing  0  and  7 raw values: 5 , 46
+2023/02/25 00:59:43 decodedWinner:  55   :::: decodedPartyB:  0
+2023/02/25 00:59:43 Comparing  0  and  8 raw values: 5 , 6
+2023/02/25 00:59:43 decodedWinner:  52   :::: decodedPartyB:  54
+2023/02/25 00:59:43 Comparing  8  and  9 raw values: 6 , 67
+2023/02/25 00:59:43 decodedWinner:  54   :::: decodedPartyB:  54
+2023/02/25 00:59:43 Total time taken by the auction process: 3.27239611s
+2023/02/25 00:59:43 Winner is  bidder:  9  with bid:  6
+2023/02/25 00:59:43 Time during Auction 3.27248049s memory taken = 3.39 MB
+2023/02/25 00:59:43 
+Iteration: 1 keyBitLength: 1024 	 msgSpace: 100 	 numBidders: 10 	 randPercent: 10 	 maxBid: 100
+2023/02/25 00:59:45 Numbidders:  10
+2023/02/25 00:59:45 Comparing  0  and  1 raw values: 90 , 77
+2023/02/25 00:59:46 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:46 Comparing  0  and  2 raw values: 90 , 33
+2023/02/25 00:59:46 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:46 Comparing  0  and  3 raw values: 90 , 42
+2023/02/25 00:59:47 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:47 Comparing  0  and  4 raw values: 90 , 78
+2023/02/25 00:59:47 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:47 Comparing  0  and  5 raw values: 90 , 30
+2023/02/25 00:59:47 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:47 Comparing  0  and  6 raw values: 90 , 95
+2023/02/25 00:59:48 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:48 Comparing  0  and  7 raw values: 90 , 64
+2023/02/25 00:59:48 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:48 Comparing  0  and  8 raw values: 90 , 92
+2023/02/25 00:59:49 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:49 Comparing  0  and  9 raw values: 90 , 90
+2023/02/25 00:59:49 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:49 Total time taken by the auction process: 3.674424433s
+2023/02/25 00:59:49 Winner is  bidder:  1  with bid:  90
+2023/02/25 00:59:49 Time during Auction 3.674509792s memory taken = 3.42 MB
+2023/02/25 00:59:49 
+Iteration: 2 keyBitLength: 1024 	 msgSpace: 100 	 numBidders: 10 	 randPercent: 10 	 maxBid: 100
+2023/02/25 00:59:51 Numbidders:  10
+2023/02/25 00:59:51 Comparing  0  and  1 raw values: 79 , 71
+2023/02/25 00:59:51 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:51 Comparing  0  and  2 raw values: 79 , 42
+2023/02/25 00:59:51 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:51 Comparing  0  and  3 raw values: 79 , 19
+2023/02/25 00:59:52 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:52 Comparing  0  and  4 raw values: 79 , 93
+2023/02/25 00:59:52 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:52 Comparing  0  and  5 raw values: 79 , 13
+2023/02/25 00:59:52 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:52 Comparing  0  and  6 raw values: 79 , 13
+2023/02/25 00:59:53 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:53 Comparing  0  and  7 raw values: 79 , 22
+2023/02/25 00:59:53 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:53 Comparing  0  and  8 raw values: 79 , 70
+2023/02/25 00:59:54 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:54 Comparing  0  and  9 raw values: 79 , 23
+2023/02/25 00:59:54 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/25 00:59:54 Total time taken by the auction process: 3.355493962s
+2023/02/25 00:59:54 Winner is  bidder:  1  with bid:  79
+2023/02/25 00:59:54 Time during Auction 3.355567528s memory taken = 1.55 MB
+2023/02/25 00:59:54 
+Iteration: 3 keyBitLength: 1024 	 msgSpace: 100 	 numBidders: 10 	 randPercent: 10 	 maxBid: 100
+2023/02/25 00:59:55 Numbidders:  10
+2023/02/25 00:59:55 Comparing  0  and  1 raw values: 14 , 61
