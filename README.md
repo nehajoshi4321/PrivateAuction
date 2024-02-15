@@ -4,7 +4,12 @@
 
 ```sh
 $ sudo apt-get install build-essential flex bison
-```
+```The PBC source can be compiled and installed using the usual GNU Build System:
+
+$ wget -c https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz -O - | tar -xz
+$ cd pbc-0.5.14
+
+
 ``````````
 cd pbc-0.5.14
 ./configure
