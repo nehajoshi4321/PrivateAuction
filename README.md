@@ -9,8 +9,6 @@ The PBC source can be compiled and installed using the usual GNU Build System:
 
 $ wget -c https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz -O - | tar -xz
 $ cd pbc-0.5.14
-
-
 ``````````
 cd pbc-0.5.14
 ./configure
@@ -22,7 +20,7 @@ After installing, you may need to rebuild the search path for libraries.
 
 **NOTE: the PBC library is installed to /usr/local/lib so you may need to add ```export LD_LIBRARY_PATH=/usr/local/lib/``` to your .profile or equivalent**
 
-## 2.Install BGN
+**## 2.Install BGN**
 Most systems include a package for GMP. To install GMP in Debian / Ubuntu:
 
 ```sh
