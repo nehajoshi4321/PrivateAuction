@@ -167,7 +167,6 @@ func initBiddersRand(bidders []Bidder) {
 	}
 }
 
-
 func main() {
 	if len(os.Args) < 7 {
 		fmt.Println("Wrong argument count ", os.Args[0], " <run count> <keyBitLength> <msgSpace> <numBidders> ",
@@ -267,5 +266,4 @@ func main() {
 	duration := time.Since(start)
 	fmt.Printf("Total Duration: %s\n", duration)
 	file.Close()
-
 }
