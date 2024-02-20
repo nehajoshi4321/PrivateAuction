@@ -1,0 +1,39 @@
+2024/02/12 10:57:50 
+Iteration: 0 keyBitLength: 1024 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 99999
+2024/02/12 10:57:51 Numbidders:  5
+2024/02/12 10:57:51 Comparing  0  and  1 raw values: 91217 , 27032
+2024/02/12 10:57:54 decodedWinner:  888572919   :::: decodedPartyB:  288186429
+2024/02/12 10:57:54 Comparing  0  and  2 raw values: 91217 , 88086
+2024/02/12 10:57:57 decodedWinner:  540266219   :::: decodedPartyB:  522707571
+2024/02/12 10:57:57 Comparing  0  and  3 raw values: 91217 , 53844
+2024/02/12 10:58:00 decodedWinner:  638200772   :::: decodedPartyB:  392734908
+2024/02/12 10:58:00 Comparing  0  and  4 raw values: 91217 , 33888
+2024/02/12 10:58:02 decodedWinner:  820429690   :::: decodedPartyB:  335999640
+2024/02/12 10:58:02 Winner is  bidder:  1  with bid:  91217
+2024/02/12 10:58:02 Time during Auction 11.204620097s memory taken = 265.30 MB
+2024/02/12 10:58:02 
+Iteration: 1 keyBitLength: 1024 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 99999
+2024/02/12 10:58:03 Numbidders:  5
+2024/02/12 10:58:03 Comparing  0  and  1 raw values: 43011 , 68299
+2024/02/12 10:58:06 decodedWinner:  288389039   :::: decodedPartyB:  448285063
+2024/02/12 10:58:06 Comparing  1  and  2 raw values: 68299 , 68056
+2024/02/12 10:58:09 decodedWinner:  330785223   :::: decodedPartyB:  329624412
+2024/02/12 10:58:09 Comparing  1  and  3 raw values: 68299 , 32992
+2024/02/12 10:58:11 decodedWinner:  804802328   :::: decodedPartyB:  394252532
+2024/02/12 10:58:11 Comparing  1  and  4 raw values: 68299 , 16116
+2024/02/12 10:58:14 decodedWinner:  654121966   :::: decodedPartyB:  163184302
+2024/02/12 10:58:14 Winner is  bidder:  2  with bid:  68299
+2024/02/12 10:58:14 Time during Auction 10.752312971s memory taken = 466.29 MB
+2024/02/12 10:58:14 
+Iteration: 2 keyBitLength: 1024 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 99999
+2024/02/12 10:58:15 Numbidders:  5
+2024/02/12 10:58:15 Comparing  0  and  1 raw values: 21545 , 18957
+2024/02/12 10:58:17 decodedWinner:  393636123   :::: decodedPartyB:  348887015
+2024/02/12 10:58:17 Comparing  0  and  2 raw values: 21545 , 13011
+2024/02/12 10:58:20 decodedWinner:  408227813   :::: decodedPartyB:  247711807
+2024/02/12 10:58:20 Comparing  0  and  3 raw values: 21545 , 30991
+2024/02/12 10:58:23 decodedWinner:  413963680   :::: decodedPartyB:  582933728
+2024/02/12 10:58:23 Comparing  3  and  4 raw values: 30991 , 28434
+2024/02/12 10:58:26 decodedWinner:  535354936   :::: decodedPartyB:  496959024
+2024/02/12 10:58:26 Winner is  bidder:  4  with bid:  30991
+2024/02/12 10:58:26 Time during Auction 10.83794908s memory taken = 1062.69 MB

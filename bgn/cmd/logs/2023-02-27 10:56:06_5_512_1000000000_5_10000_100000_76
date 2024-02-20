@@ -1,0 +1,70 @@
+2023/02/27 10:56:06 
+Iteration: 0 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 100000
+2023/02/27 10:56:06 Numbidders:  5
+2023/02/27 10:56:06 Comparing  0  and  1 raw values: 31606 , 21172
+2023/02/27 10:56:07 decodedWinner:  321325721   :::: decodedPartyB:  215284979
+2023/02/27 10:56:07 Comparing  0  and  2 raw values: 31606 , 92191
+2023/02/27 10:56:08 decodedWinner:  295618215   :::: decodedPartyB:  862148550
+2023/02/27 10:56:08 Comparing  2  and  3 raw values: 92191 , 71077
+2023/02/27 10:56:09 decodedWinner:  490840792   :::: decodedPartyB:  383835040
+2023/02/27 10:56:09 Comparing  2  and  4 raw values: 92191 , 91644
+2023/02/27 10:56:10 decodedWinner:  965641829   :::: decodedPartyB:  960051489
+2023/02/27 10:56:10 Total time taken by the auction process: 4.315281086s
+2023/02/27 10:56:10 Winner is  bidder:  3  with bid:  92191
+2023/02/27 10:56:10 Time during Auction 4.315310421s memory taken = 186.47 MB
+2023/02/27 10:56:10 
+Iteration: 1 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 100000
+2023/02/27 10:56:10 Numbidders:  5
+2023/02/27 10:56:10 Comparing  0  and  1 raw values: 87796 , 61519
+2023/02/27 10:56:12 decodedWinner:  861888292   :::: decodedPartyB:  615488863
+2023/02/27 10:56:12 Comparing  0  and  2 raw values: 87796 , 85886
+2023/02/27 10:56:14 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/27 10:56:14 Comparing  0  and  3 raw values: 87796 , 915
+2023/02/27 10:56:15 decodedWinner:  0   :::: decodedPartyB:  51572145
+2023/02/27 10:56:15 Comparing  3  and  4 raw values: 915 , 80594
+2023/02/27 10:56:16 decodedWinner:  67489356   :::: decodedPartyB:  461342653
+2023/02/27 10:56:16 Total time taken by the auction process: 5.780476719s
+2023/02/27 10:56:16 Winner is  bidder:  5  with bid:  80594
+2023/02/27 10:56:16 Time during Auction 5.780524213s memory taken = 291.35 MB
+2023/02/27 10:56:16 
+Iteration: 2 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 100000
+2023/02/27 10:56:16 Numbidders:  5
+2023/02/27 10:56:16 Comparing  0  and  1 raw values: 356 , 58333
+2023/02/27 10:56:17 decodedWinner:  79194976   :::: decodedPartyB:  667719503
+2023/02/27 10:56:17 Comparing  1  and  2 raw values: 58333 , 30554
+2023/02/27 10:56:18 decodedWinner:  214875298   :::: decodedPartyB:  126926984
+2023/02/27 10:56:18 Comparing  1  and  3 raw values: 58333 , 33214
+2023/02/27 10:56:19 decodedWinner:  246657754   :::: decodedPartyB:  173611702
+2023/02/27 10:56:19 Comparing  1  and  4 raw values: 58333 , 47114
+2023/02/27 10:56:20 decodedWinner:  413714980   :::: decodedPartyB:  341576810
+2023/02/27 10:56:20 Total time taken by the auction process: 4.092226733s
+2023/02/27 10:56:20 Winner is  bidder:  2  with bid:  58333
+2023/02/27 10:56:20 Time during Auction 4.092275038s memory taken = 580.56 MB
+2023/02/27 10:56:20 
+Iteration: 3 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 100000
+2023/02/27 10:56:21 Numbidders:  5
+2023/02/27 10:56:21 Comparing  0  and  1 raw values: 31215 , 96667
+2023/02/27 10:56:22 decodedWinner:  138676620   :::: decodedPartyB:  398390156
+2023/02/27 10:56:22 Comparing  1  and  2 raw values: 96667 , 29197
+2023/02/27 10:56:23 decodedWinner:  246301656   :::: decodedPartyB:  75467616
+2023/02/27 10:56:23 Comparing  1  and  3 raw values: 96667 , 34351
+2023/02/27 10:56:23 decodedWinner:  610884766   :::: decodedPartyB:  229510846
+2023/02/27 10:56:23 Comparing  1  and  4 raw values: 96667 , 13950
+2023/02/27 10:56:24 decodedWinner:  568455609   :::: decodedPartyB:  103503352
+2023/02/27 10:56:24 Total time taken by the auction process: 3.87560364s
+2023/02/27 10:56:24 Winner is  bidder:  2  with bid:  96667
+2023/02/27 10:56:24 Time during Auction 3.875658812s memory taken = 777.28 MB
+2023/02/27 10:56:24 
+Iteration: 4 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 5 	 randPercent: 10000 	 maxBid: 100000
+2023/02/27 10:56:25 Numbidders:  5
+2023/02/27 10:56:25 Comparing  0  and  1 raw values: 81140 , 97132
+2023/02/27 10:56:27 decodedWinner:  0   :::: decodedPartyB:  0
+2023/02/27 10:56:27 Comparing  0  and  2 raw values: 81140 , 4628
+2023/02/27 10:56:28 decodedWinner:  967889419   :::: decodedPartyB:  57243595
+2023/02/27 10:56:28 Comparing  0  and  3 raw values: 81140 , 15695
+2023/02/27 10:56:29 decodedWinner:  668500328   :::: decodedPartyB:  131262323
+2023/02/27 10:56:29 Comparing  0  and  4 raw values: 81140 , 75891
+2023/02/27 10:56:30 decodedWinner:  883585269   :::: decodedPartyB:  826617872
+2023/02/27 10:56:30 Total time taken by the auction process: 5.192926337s
+2023/02/27 10:56:30 Winner is  bidder:  1  with bid:  81140
+2023/02/27 10:56:30 Time during Auction 5.192961964s memory taken = 975.79 MB

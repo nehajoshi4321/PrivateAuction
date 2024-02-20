@@ -1,0 +1,161 @@
+2024/02/12 11:25:55 
+Iteration: 0 keyBitLength: 512 	 msgSpace: 10000000000 	 numBidders: 40 	 randPercent: 10000 	 maxBid: 100000
+2024/02/12 11:25:56 Numbidders:  40
+2024/02/12 11:25:56 Comparing  0  and  1 raw values: 31606 , 21172
+2024/02/12 11:26:00 decodedWinner:  321325721   :::: decodedPartyB:  215284979
+2024/02/12 11:26:00 Comparing  0  and  2 raw values: 31606 , 92191
+2024/02/12 11:26:03 decodedWinner:  295618215   :::: decodedPartyB:  862148550
+2024/02/12 11:26:03 Comparing  2  and  3 raw values: 92191 , 71077
+2024/02/12 11:26:06 decodedWinner:  490840792   :::: decodedPartyB:  383835040
+2024/02/12 11:26:06 Comparing  2  and  4 raw values: 92191 , 91644
+2024/02/12 11:26:10 decodedWinner:  965641829   :::: decodedPartyB:  960051489
+2024/02/12 11:26:10 Comparing  2  and  5 raw values: 92191 , 87796
+2024/02/12 11:26:14 decodedWinner:  1229868184   :::: decodedPartyB:  1172100304
+2024/02/12 11:26:14 Comparing  2  and  6 raw values: 92191 , 61519
+2024/02/12 11:26:17 decodedWinner:  576157386   :::: decodedPartyB:  394241754
+2024/02/12 11:26:17 Comparing  2  and  7 raw values: 92191 , 85886
+2024/02/12 11:26:21 decodedWinner:  760611093   :::: decodedPartyB:  709256868
+2024/02/12 11:26:21 Comparing  2  and  8 raw values: 92191 , 915
+2024/02/12 11:26:24 decodedWinner:  819012668   :::: decodedPartyB:  38694144
+2024/02/12 11:26:24 Comparing  2  and  9 raw values: 92191 , 80594
+2024/02/12 11:26:28 decodedWinner:  589716131   :::: decodedPartyB:  519067207
+2024/02/12 11:26:28 Comparing  2  and  10 raw values: 92191 , 356
+2024/02/12 11:26:32 decodedWinner:  1177295207   :::: decodedPartyB:  35694322
+2024/02/12 11:26:32 Comparing  2  and  11 raw values: 92191 , 58333
+2024/02/12 11:26:36 decodedWinner:  717160508   :::: decodedPartyB:  466001864
+2024/02/12 11:26:36 Comparing  2  and  12 raw values: 92191 , 30554
+2024/02/12 11:26:40 decodedWinner:  514563412   :::: decodedPartyB:  178888310
+2024/02/12 11:26:40 Comparing  2  and  13 raw values: 92191 , 33214
+2024/02/12 11:26:44 decodedWinner:  510153265   :::: decodedPartyB:  204180589
+2024/02/12 11:26:44 Comparing  2  and  14 raw values: 92191 , 47114
+2024/02/12 11:26:47 decodedWinner:  818966887   :::: decodedPartyB:  426346217
+2024/02/12 11:26:47 Comparing  2  and  15 raw values: 92191 , 31215
+2024/02/12 11:26:51 decodedWinner:  664266604   :::: decodedPartyB:  237800460
+2024/02/12 11:26:51 Comparing  2  and  16 raw values: 92191 , 96667
+2024/02/12 11:26:55 decodedWinner:  625570794   :::: decodedPartyB:  655434666
+2024/02/12 11:26:55 Comparing  16  and  17 raw values: 96667 , 29197
+2024/02/12 11:26:59 decodedWinner:  246301656   :::: decodedPartyB:  75467616
+2024/02/12 11:26:59 Comparing  16  and  18 raw values: 96667 , 34351
+2024/02/12 11:27:03 decodedWinner:  610884766   :::: decodedPartyB:  229510846
+2024/02/12 11:27:03 Comparing  16  and  19 raw values: 96667 , 13950
+2024/02/12 11:27:06 decodedWinner:  568455609   :::: decodedPartyB:  103503352
+2024/02/12 11:27:06 Comparing  16  and  20 raw values: 96667 , 81140
+2024/02/12 11:27:09 decodedWinner:  876197327   :::: decodedPartyB:  735600342
+2024/02/12 11:27:09 Comparing  16  and  21 raw values: 96667 , 97132
+2024/02/12 11:27:12 decodedWinner:  744745519   :::: decodedPartyB:  748267894
+2024/02/12 11:27:12 Comparing  21  and  22 raw values: 97132 , 4628
+2024/02/12 11:27:16 decodedWinner:  1043072927   :::: decodedPartyB:  78996239
+2024/02/12 11:27:16 Comparing  21  and  23 raw values: 97132 , 15695
+2024/02/12 11:27:20 decodedWinner:  688078704   :::: decodedPartyB:  140089131
+2024/02/12 11:27:20 Comparing  21  and  24 raw values: 97132 , 75891
+2024/02/12 11:27:23 decodedWinner:  952735929   :::: decodedPartyB:  753644036
+2024/02/12 11:27:23 Comparing  21  and  25 raw values: 97132 , 35450
+2024/02/12 11:27:26 decodedWinner:  1461402797   :::: decodedPartyB:  554985807
+2024/02/12 11:27:26 Comparing  21  and  26 raw values: 97132 , 29521
+2024/02/12 11:27:29 decodedWinner:  652604491   :::: decodedPartyB:  224897305
+2024/02/12 11:27:29 Comparing  21  and  27 raw values: 97132 , 94175
+2024/02/12 11:27:32 decodedWinner:  743069113   :::: decodedPartyB:  721302636
+2024/02/12 11:27:32 Comparing  21  and  28 raw values: 97132 , 53127
+2024/02/12 11:27:35 decodedWinner:  922129185   :::: decodedPartyB:  523311870
+2024/02/12 11:27:35 Comparing  21  and  29 raw values: 97132 , 26962
+2024/02/12 11:27:39 decodedWinner:  1186914442   :::: decodedPartyB:  349926682
+2024/02/12 11:27:39 Comparing  21  and  30 raw values: 97132 , 67386
+2024/02/12 11:27:43 decodedWinner:  1045945121   :::: decodedPartyB:  728287587
+2024/02/12 11:27:43 Comparing  21  and  31 raw values: 97132 , 13846
+2024/02/12 11:27:46 decodedWinner:  1100268860   :::: decodedPartyB:  157388054
+2024/02/12 11:27:46 Comparing  21  and  32 raw values: 97132 , 42490
+2024/02/12 11:27:49 decodedWinner:  1037788434   :::: decodedPartyB:  478746132
+2024/02/12 11:27:49 Comparing  21  and  33 raw values: 97132 , 98671
+2024/02/12 11:27:52 decodedWinner:  1316847298   :::: decodedPartyB:  1337334466
+2024/02/12 11:27:52 Comparing  33  and  34 raw values: 98671 , 785
+2024/02/12 11:27:56 decodedWinner:  1063626518   :::: decodedPartyB:  29754586
+2024/02/12 11:27:56 Comparing  33  and  35 raw values: 98671 , 76429
+2024/02/12 11:28:01 decodedWinner:  1015215092   :::: decodedPartyB:  787768400
+2024/02/12 11:28:01 Comparing  33  and  36 raw values: 98671 , 30377
+2024/02/12 11:28:06 decodedWinner:  861645249   :::: decodedPartyB:  275887611
+2024/02/12 11:28:06 Comparing  33  and  37 raw values: 98671 , 9787
+2024/02/12 11:28:10 decodedWinner:  1370496825   :::: decodedPartyB:  163363221
+2024/02/12 11:28:10 Comparing  33  and  38 raw values: 98671 , 70813
+2024/02/12 11:28:13 decodedWinner:  1286691038   :::: decodedPartyB:  932615858
+2024/02/12 11:28:13 Comparing  33  and  39 raw values: 98671 , 41788
+2024/02/12 11:28:16 decodedWinner:  1080361269   :::: decodedPartyB:  461417346
+2024/02/12 11:28:16 Winner is  bidder:  34  with bid:  98671
+2024/02/12 11:28:16 Time during Auction 2m20.036682335s memory taken = 4312.87 MB
+2024/02/12 11:28:19 
+Iteration: 1 keyBitLength: 512 	 msgSpace: 10000000000 	 numBidders: 40 	 randPercent: 10000 	 maxBid: 100000
+2024/02/12 11:28:21 Numbidders:  40
+2024/02/12 11:28:21 Comparing  0  and  1 raw values: 1747 , 3140
+2024/02/12 11:28:24 decodedWinner:  83050994   :::: decodedPartyB:  97433719
+2024/02/12 11:28:24 Comparing  1  and  2 raw values: 3140 , 90843
+2024/02/12 11:28:27 decodedWinner:  62705898   :::: decodedPartyB:  1100934012
+2024/02/12 11:28:27 Comparing  2  and  3 raw values: 90843 , 13436
+2024/02/12 11:28:30 decodedWinner:  1154338840   :::: decodedPartyB:  179475082
+2024/02/12 11:28:30 Comparing  2  and  4 raw values: 90843 , 19658
+2024/02/12 11:28:33 decodedWinner:  436865757   :::: decodedPartyB:  107635132
+2024/02/12 11:28:33 Comparing  2  and  5 raw values: 90843 , 69863
+2024/02/12 11:28:36 decodedWinner:  1145167617   :::: decodedPartyB:  887344397
+2024/02/12 11:28:36 Comparing  2  and  6 raw values: 90843 , 87305
+2024/02/12 11:28:39 decodedWinner:  618909829   :::: decodedPartyB:  596171103
+2024/02/12 11:28:39 Comparing  2  and  7 raw values: 90843 , 31586
+2024/02/12 11:28:42 decodedWinner:  1169334234   :::: decodedPartyB:  425184828
+2024/02/12 11:28:42 Comparing  2  and  8 raw values: 90843 , 99420
+2024/02/12 11:28:46 decodedWinner:  928006144   :::: decodedPartyB:  1013690374
+2024/02/12 11:28:46 Comparing  8  and  9 raw values: 99420 , 16652
+2024/02/12 11:28:49 decodedWinner:  1142614705   :::: decodedPartyB:  221655169
+2024/02/12 11:28:49 Comparing  8  and  10 raw values: 99420 , 54681
+2024/02/12 11:28:52 decodedWinner:  731505975   :::: decodedPartyB:  403211193
+2024/02/12 11:28:52 Comparing  8  and  11 raw values: 99420 , 91146
+2024/02/12 11:28:58 decodedWinner:  1312147072   :::: decodedPartyB:  1207232752
+2024/02/12 11:28:58 Comparing  8  and  12 raw values: 99420 , 50285
+2024/02/12 11:29:02 decodedWinner:  1228020039   :::: decodedPartyB:  628523904
+2024/02/12 11:29:02 Comparing  8  and  13 raw values: 99420 , 42108
+2024/02/12 11:29:05 decodedWinner:  1309156417   :::: decodedPartyB:  563756545
+2024/02/12 11:29:05 Comparing  8  and  14 raw values: 99420 , 1638
+2024/02/12 11:29:08 decodedWinner:  1374920993   :::: decodedPartyB:  40881167
+2024/02/12 11:29:08 Comparing  8  and  15 raw values: 99420 , 58936
+2024/02/12 11:29:11 decodedWinner:  809209128   :::: decodedPartyB:  488090040
+2024/02/12 11:29:11 Comparing  8  and  16 raw values: 99420 , 41541
+2024/02/12 11:29:14 decodedWinner:  1647822112   :::: decodedPartyB:  713134141
+2024/02/12 11:29:14 Comparing  8  and  17 raw values: 99420 , 61583
+2024/02/12 11:29:18 decodedWinner:  1102462039   :::: decodedPartyB:  697341280
+2024/02/12 11:29:18 Comparing  8  and  18 raw values: 99420 , 58211
+2024/02/12 11:29:21 decodedWinner:  1239909103   :::: decodedPartyB:  745277476
+2024/02/12 11:29:21 Comparing  8  and  19 raw values: 99420 , 4224
+2024/02/12 11:29:24 decodedWinner:  1456945386   :::: decodedPartyB:  74413878
+2024/02/12 11:29:24 Comparing  8  and  20 raw values: 99420 , 10269
+2024/02/12 11:29:27 decodedWinner:  1307999830   :::: decodedPartyB:  149125981
+2024/02/12 11:29:27 Comparing  8  and  21 raw values: 99420 , 40704
+2024/02/12 11:29:30 decodedWinner:  1445559116   :::: decodedPartyB:  593942252
+2024/02/12 11:29:30 Comparing  8  and  22 raw values: 99420 , 72965
+2024/02/12 11:29:34 decodedWinner:  1192526696   :::: decodedPartyB:  884960866
+2024/02/12 11:29:34 Comparing  8  and  23 raw values: 99420 , 47735
+2024/02/12 11:29:37 decodedWinner:  1390338747   :::: decodedPartyB:  668144242
+2024/02/12 11:29:37 Comparing  8  and  24 raw values: 99420 , 51928
+2024/02/12 11:29:42 decodedWinner:  996641059   :::: decodedPartyB:  527610067
+2024/02/12 11:29:42 Comparing  8  and  25 raw values: 99420 , 1003
+2024/02/12 11:29:47 decodedWinner:  1610151530   :::: decodedPartyB:  31838101
+2024/02/12 11:29:47 Comparing  8  and  26 raw values: 99420 , 47166
+2024/02/12 11:29:50 decodedWinner:  1202827334   :::: decodedPartyB:  587379722
+2024/02/12 11:29:50 Comparing  8  and  27 raw values: 99420 , 33829
+2024/02/12 11:29:53 decodedWinner:  827180997   :::: decodedPartyB:  309340052
+2024/02/12 11:29:53 Comparing  8  and  28 raw values: 99420 , 30955
+2024/02/12 11:29:57 decodedWinner:  1703497874   :::: decodedPartyB:  556092939
+2024/02/12 11:29:57 Comparing  8  and  29 raw values: 99420 , 29212
+2024/02/12 11:30:02 decodedWinner:  1040819400   :::: decodedPartyB:  309673288
+2024/02/12 11:30:02 Comparing  8  and  30 raw values: 99420 , 17354
+2024/02/12 11:30:06 decodedWinner:  868006309   :::: decodedPartyB:  164126227
+2024/02/12 11:30:06 Comparing  8  and  31 raw values: 99420 , 36655
+2024/02/12 11:30:10 decodedWinner:  1469077162   :::: decodedPartyB:  549695442
+2024/02/12 11:30:10 Comparing  8  and  32 raw values: 99420 , 28483
+2024/02/12 11:30:14 decodedWinner:  940477597   :::: decodedPartyB:  280196001
+2024/02/12 11:30:14 Comparing  8  and  33 raw values: 99420 , 37897
+2024/02/12 11:30:18 decodedWinner:  726075694   :::: decodedPartyB:  293876619
+2024/02/12 11:30:18 Comparing  8  and  34 raw values: 99420 , 31286
+2024/02/12 11:30:22 decodedWinner:  855912246   :::: decodedPartyB:  289991242
+2024/02/12 11:30:22 Comparing  8  and  35 raw values: 99420 , 64976
+2024/02/12 11:30:26 decodedWinner:  1693689598   :::: decodedPartyB:  1122780298
+2024/02/12 11:30:26 Comparing  8  and  36 raw values: 99420 , 5292
+2024/02/12 11:30:44 decodedWinner:  759479333   :::: decodedPartyB:  80910581
+2024/02/12 11:30:44 Comparing  8  and  37 raw values: 99420 , 79231
+2024/02/12 11:30:48 decodedWinner:  1421824416   :::: decodedPartyB:  1141883742
+2024/02/12 11:30:48 Comparing  8  and  38 raw values: 99420 , 4142
