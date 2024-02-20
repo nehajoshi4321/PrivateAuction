@@ -13,7 +13,7 @@ args = [
 for arg_set in args:
     # Construct the command to run the Go program with the current set of arguments
     cmd = [
-        'go', 'run', 'test1.go',
+        'go', 'run', 'test2.go',
         str(arg_set[0]), str(arg_set[1]), str(arg_set[2]), str(arg_set[3]),
         str(arg_set[4]), str(arg_set[5]), str(arg_set[6])
     ]
