@@ -261,8 +261,9 @@ func main() {
 		log.Println("Winner is  bidder: ", bidders[winnerIdx].identity, " with bid: ", bidders[winnerIdx].bid)
 	        elapsed := time.Since(aucStart)
 		log.Printf("Time during Auction %s memory taken = %.2f MB\n", elapsed, float64(m.Alloc)/(1024*1024))
-
+        time.Sleep(100 * time.Millisecond)
 	}
+
 	duration := time.Since(start)
 	fmt.Printf("Total Duration: %s\n", duration)
 	file.Close()

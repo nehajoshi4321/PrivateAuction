@@ -1,0 +1,60 @@
+2024/02/20 14:44:00 
+Iteration: 0 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 1000 	 maxBid: 100000
+2024/02/20 14:44:00 Comparing  0  and  1 raw values: 4512 , 123
+2024/02/20 14:44:01 decodedWinner:  4694172   :::: decodedPartyB:  344673
+2024/02/20 14:44:01 Comparing  0  and  2 raw values: 4512 , 69253
+2024/02/20 14:44:01 decodedWinner:  4418940   :::: decodedPartyB:  66635041
+2024/02/20 14:44:01 Comparing  2  and  3 raw values: 69253 , 89453
+2024/02/20 14:44:02 decodedWinner:  94440349   :::: decodedPartyB:  121972949
+2024/02/20 14:44:02 Comparing  3  and  4 raw values: 89453 , 54742
+2024/02/20 14:44:03 decodedWinner:  104267337   :::: decodedPartyB:  63863733
+2024/02/20 14:44:03 Comparing  3  and  5 raw values: 89453 , 45864
+2024/02/20 14:44:04 decodedWinner:  60572056   :::: decodedPartyB:  31062303
+2024/02/20 14:44:04 Total time taken by the auction process: 4.168311068s
+2024/02/20 14:44:04 Winner is  bidder:  4  with bid:  89453
+2024/02/20 14:44:04 Time during Auction 4.168395817s memory taken = 190.90 MB
+2024/02/20 14:44:04 
+Iteration: 1 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 1000 	 maxBid: 100000
+2024/02/20 14:44:04 Comparing  0  and  1 raw values: 2449 , 91722
+2024/02/20 14:44:05 decodedWinner:  3444921   :::: decodedPartyB:  124320563
+2024/02/20 14:44:05 Comparing  1  and  2 raw values: 91722 , 18940
+2024/02/20 14:44:06 decodedWinner:  82037391   :::: decodedPartyB:  17043065
+2024/02/20 14:44:06 Comparing  1  and  3 raw values: 91722 , 39203
+2024/02/20 14:44:07 decodedWinner:  87770317   :::: decodedPartyB:  37562153
+2024/02/20 14:44:07 Comparing  1  and  4 raw values: 91722 , 99228
+2024/02/20 14:44:07 decodedWinner:  145772723   :::: decodedPartyB:  157699757
+2024/02/20 14:44:07 Comparing  4  and  5 raw values: 99228 , 87509
+2024/02/20 14:44:08 decodedWinner:  116130651   :::: decodedPartyB:  102419421
+2024/02/20 14:44:08 Total time taken by the auction process: 4.346582601s
+2024/02/20 14:44:08 Winner is  bidder:  5  with bid:  99228
+2024/02/20 14:44:08 Time during Auction 4.346624327s memory taken = 314.47 MB
+2024/02/20 14:44:08 
+Iteration: 2 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 1000 	 maxBid: 100000
+2024/02/20 14:44:09 Comparing  0  and  1 raw values: 14029 , 11273
+2024/02/20 14:44:09 decodedWinner:  25189633   :::: decodedPartyB:  20292221
+2024/02/20 14:44:09 Comparing  0  and  2 raw values: 14029 , 41445
+2024/02/20 14:44:10 decodedWinner:  26050804   :::: decodedPartyB:  76880068
+2024/02/20 14:44:10 Comparing  2  and  3 raw values: 41445 , 23252
+2024/02/20 14:44:11 decodedWinner:  63163174   :::: decodedPartyB:  35437042
+2024/02/20 14:44:11 Comparing  2  and  4 raw values: 41445 , 64816
+2024/02/20 14:44:12 decodedWinner:  38953633   :::: decodedPartyB:  60899002
+2024/02/20 14:44:12 Comparing  4  and  5 raw values: 64816 , 41186
+2024/02/20 14:44:13 decodedWinner:  34835393   :::: decodedPartyB:  22169713
+2024/02/20 14:44:13 Total time taken by the auction process: 4.392374871s
+2024/02/20 14:44:13 Winner is  bidder:  5  with bid:  64816
+2024/02/20 14:44:13 Time during Auction 4.392420265s memory taken = 657.64 MB
+2024/02/20 14:44:13 
+Iteration: 3 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 1000 	 maxBid: 100000
+2024/02/20 14:44:13 Comparing  0  and  1 raw values: 88738 , 70281
+2024/02/20 14:44:14 decodedWinner:  75556694   :::: decodedPartyB:  59905158
+2024/02/20 14:44:14 Comparing  0  and  2 raw values: 88738 , 16740
+2024/02/20 14:44:15 decodedWinner:  88759290   :::: decodedPartyB:  16833288
+2024/02/20 14:44:15 Comparing  0  and  3 raw values: 88738 , 49629
+2024/02/20 14:44:16 decodedWinner:  97905028   :::: decodedPartyB:  54806910
+2024/02/20 14:44:16 Comparing  0  and  4 raw values: 88738 , 33224
+2024/02/20 14:44:17 decodedWinner:  54116172   :::: decodedPartyB:  20308146
+2024/02/20 14:44:17 Comparing  0  and  5 raw values: 88738 , 12040
+2024/02/20 14:44:17 decodedWinner:  100324502   :::: decodedPartyB:  13655762
+2024/02/20 14:44:17 Total time taken by the auction process: 4.236007144s
+2024/02/20 14:44:17 Winner is  bidder:  1  with bid:  88738
+2024/02/20 14:44:17 Time during Auction 4.236055623s memory taken = 851.76 MB
