@@ -17,8 +17,8 @@ import (
 	"log"
 )
 
-const KEYBITS = 2048
-const POLYBASE = 3
+const KEYBITS = 128
+const POLYBASE = 5
 const MSGSPACE = 1000000000 // message space for polynomial coefficients
 const FPSCALEBASE = 3
 const FPPREC = 0.0001
@@ -144,60 +144,6 @@ func encbidgenerate1(r1a int, r2a int, r1b int, r2b int) big.Int {
 
 func encbidgenerate2(r1a int, r2a int, r1b int, r2b int) big.Int {
 
-	/*   pk_j, sk_j, err_j := setup()
-	       if err_j != nil {
-			panic(err_j)
-		}
-	     // p_min := 0
-	     // p_max := 10000
-	*/
-	/*   bid_array_i :=make([]int, param)
-	     for i:=0; i<param; i++ {
-	      rand.Seed(time.Now().UnixNano())
-
-	     	bid_array_i[i] = rand.Intn(10000)
-	     }
-	     fmt.Print("\n")
-	     fmt.Println("===bids generated w.r.t to various parameters===")
-	     fmt.Println(bid_array_i)
-
-	     fmt.Print("\n")
-	     fmt.Println("===encrypted bids generated w.r.t various parameters===")
-	      encbid_array_i :=make([]big.Int, param)
-	      for i:=0; i<param; i++{
-	      a, b, c := bid_generate(bid_array_i[i], pk_j, r1b, r2b)
-	      encr := bid_random(a,b,c,pk_j,r1a,r2a)
-	      decr :=bid_comp(encr, pk_j, sk_j)
-	      encbid_array_i[i]= *(decr)
-	     // fmt.Println(reflect.TypeOf(encbid_array_i[i]))
-
-	     }
-	     fmt.Println(encbid_array_i)
-
-
-	     fmt.Print("\n")
-	     fmt.Println("===weighted enc array w.r.t to various parameters===")
-	     weightedenc_bid_array_i :=make([]big.Int, param)
-	     for i:=0; i<param; i++{
-	     a := &encbid_array_i[i]
-	     b := big.NewInt(int64(WEIGHT[i]))
-	     weightedenc_bid_array_i[i]= *big.NewInt(0).Mul(a,b)
-
-	     }
-	     fmt.Println(weightedenc_bid_array_i)
-
-	     //generating final score of the domain
-	     fmt.Print("\n")
-	     fmt.Println("===final score of the domain===")
-	     Final_score := big.NewInt(0)
-	     for i:=0; i<param; i++{
-	     c := &weightedenc_bid_array_i[i]
-	     Final_score.Add(Final_score,c)
-	     }
-	     fmt.Println(Final_score)
-	     return *Final_score
-	*/
-
 	pk_i, sk_i, err_i := setup()
 	if err_i != nil {
 		panic(err_i)
@@ -261,18 +207,6 @@ func encbidgenerate2(r1a int, r2a int, r1b int, r2b int) big.Int {
 
 func bid_final_score(user_i big.Int, user_j big.Int) (big.Int, big.Int) {
 
-	// pk_i, sk_i, err_i := setup()
-
-	//pk_j, sk_j, err_j := setup()
-	//start := time.Now()
-	// p_min := 0
-	//  p_max := 900
-	/*
-	        r1a :=6
-		r2a :=3
-		r1b :=2
-	        r2b :=10
-	*/
 	rand.Seed(time.Now().UnixNano())
 	r1a := rand.Intn(10000)
 	r2a := rand.Intn(10000)
@@ -291,45 +225,6 @@ func bid_final_score(user_i big.Int, user_j big.Int) (big.Int, big.Int) {
 }
 
 func main() {
-	//setup of public key and secret key
-	/* pk, sk, err := setup()
-
-
-	        if err != nil {
-			panic(err)
-		} else{
-		        fmt.Printf("public key: %s\n", reflect.TypeOf(pk))
-		        fmt.Printf("secret key: %s\n", reflect.TypeOf(sk))
-	        	fmt.Println("public key:", pk)
-	        	fmt.Println("secret key:", sk)
-	        }
-
-	        //bid generation alongwith the randomization
-	        bid :=40
-	        fmt.Println("Bid:", bid)
-	        r1a :=6
-		r2a :=3
-	        a, b, c := bid_generate(bid, pk, r1a, r2a)
-
-	        fmt.Println("Bid:", a)
-	        fmt.Println("randomization 1:", b)
-	        fmt.Println("randomization 2:", c)
-
-	        //bid randomization with second party
-	        r1b :=2
-	        r2b :=10
-	        encr := bid_random(a,b,c,pk,r1b,r2b)
-
-	        fmt.Println("enc Bid:", encr)
-
-	        //bid computation in ax+b
-	        decr :=bid_comp(encr, pk, sk)
-
-	        fmt.Println("dec Bid:", decr.String())
-	*/
-
-	//calculating final bid score
-
 	start := time.Now()
 	fmt.Println("******Adding weight to the bids of the domains******")
 	fmt.Print("\n")
@@ -350,6 +245,7 @@ func main() {
 		domain[i], domain[i+1] = bid_final_score(user_i, user_j)
 
 	}
+
 
 	fmt.Println("finalscore:", domain)
 	var k int
