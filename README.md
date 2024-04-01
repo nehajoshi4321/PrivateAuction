@@ -51,7 +51,7 @@ $ go test -bench=.
 ``````````````````
 
 
-### Testing the auction code
+## Testing the auction code
 ``````````````````
 $ cd bgn/cmd/
 $ go run test2.go "\nIteration:", i, "keyBitLength:", keyBitLength, "\t msgSpace:", msgSpace, "\t numBidders:", numBidders, randPercent:", randPercent, "\t maxBid:", maxBid //to test the encrypted message
