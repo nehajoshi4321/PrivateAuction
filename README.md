@@ -54,6 +54,5 @@ $ go test -bench=.
 ### Testing the auction code
 ``````````````````
 $ cd bgn/cmd/
-$ go run bidcomp.go  //to test the encrypted message
-$ go run new.go  //to test the whole Auction protocol
+$ go run test2.go "\nIteration:", i, "keyBitLength:", keyBitLength, "\t msgSpace:", msgSpace, "\t numBidders:", numBidders, randPercent:", randPercent, "\t maxBid:", maxBid //to test the encrypted message
 ``````````````````
