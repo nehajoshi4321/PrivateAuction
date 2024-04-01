@@ -42,7 +42,7 @@ $ cd bgn
 $ make install && make build && make run
 ```
 
-### Testing BGN
+## Testing BGN
 ``````````````````
 $ cd bgn
 $ make install && make build
