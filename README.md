@@ -48,8 +48,6 @@ $ cd bgn
 $ make install && make build
 $ go test
 $ go test -bench=.
-``````````````````
-
 
 ## Testing the auction code
 ``````````````````
