@@ -40,10 +40,9 @@ For more information or to compile from source, visit https://gmplib.org/
 ```sh
 $ cd bgn
 $ make install && make build && make run
-```
 
 ## Testing BGN
-``````````````````
+
 $ cd bgn
 $ make install && make build
 $ go test
