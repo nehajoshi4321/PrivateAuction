@@ -40,20 +40,16 @@ For more information or to compile from source, visit https://gmplib.org/
 ```sh
 $ cd bgn
 $ make install && make build && make run
-```
-
-### Testing BGN
+``````````````````
+## Testing BGN
 ``````````````````
 $ cd bgn
 $ make install && make build
 $ go test
 $ go test -bench=.
 ``````````````````
-
-
-### Testing the auction code
+## Testing the auction code
 ``````````````````
 $ cd bgn/cmd/
-$ go run bidcomp.go  //to test the encrypted message
-$ go run new.go  //to test the whole Auction protocol
+$ go run test2.go "\nIteration:", i, "keyBitLength:", keyBitLength, "\t msgSpace:", msgSpace, "\t numBidders:", numBidders, randPercent:", randPercent, "\t maxBid:", maxBid //to test the encrypted message
 ``````````````````
