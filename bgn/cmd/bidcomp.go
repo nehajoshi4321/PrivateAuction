@@ -139,27 +139,6 @@ func encbidgenerate2(r1a int, r2a int, r1b int, r2b int) big.Int {
 
 	fmt.Println(decr)
 
-	/*
-	   fmt.Print("\n")
-	   fmt.Println("===weighted enc array w.r.t to various parameters===")
-	   weightedenc_bid_array_i :=make([]big.Int, param)
-	   for i:=0; i<param; i++{
-	   a := &encbid_array_i[i]
-	   b := big.NewInt(int64(WEIGHT[i]))
-	   weightedenc_bid_array_i[i]= *big.NewInt(0).Mul(a,b)
-
-	   }
-	   fmt.Println(weightedenc_bid_array_i)
-
-	   //generating final score of the domain
-	   fmt.Print("\n")
-	   fmt.Println("===final score of the domain===")
-	   Final_score := big.NewInt(0)
-	   for i:=0; i<param; i++{
-	   c := &weightedenc_bid_array_i[i]
-	   Final_score.Add(Final_score,c)
-	   }*/
-
 	return *decr
 
 }
@@ -185,15 +164,16 @@ func bid_final_score(user_i big.Int, user_j big.Int) (big.Int, big.Int) {
 
 func main() {
 	start := time.Now()
-	fmt.Println("******Adding weight to the bids of the domains******")
+	//fmt.Println("******Adding weight to the bids of the domains******")
 	fmt.Print("\n")
 	var user_i big.Int
 	var user_j big.Int
 	PARAM := 4
-	fmt.Println("===weights w.r.t to various parameters===")
+	//fmt.Println("===weights w.r.t to various parameters===")
 	weight := make([]int, PARAM)
 	for i := 0; i < 100; i++ {
-		rand.Seed(time.Now().UnixNano())
+		rand.Seed(tim
+		e.Now().UnixNano())
 		weight[rand.Intn(PARAM)]++
 	}
 	fmt.Println(weight)

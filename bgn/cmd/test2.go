@@ -11,24 +11,23 @@ import (
 	"strconv"
 	"time"
 	"reflect"
-	//"math"
 	"io"
 )
 
 const (
 	DDMMYYYYhhmmss = "2024-02-13 15:04:05"
-	POLYBASE = 3
-	FPSCALEBASE = 3
-	FPPREC = 0.0001
-	DET = true // deterministic ops
+	POLYBASE       = 3
+	FPSCALEBASE    = 3
+	FPPREC         = 0.0001
+	DET            = true // deterministic ops
 )
 
 var (
 	keyBitLength int
-	msgSpace int64
-	numBidders int
-	randPercent int64
-	maxBid int64
+	msgSpace     int64
+	numBidders   int
+	randPercent  float64
+	maxBid       int64
 )
 
 type Bidder struct {
@@ -52,15 +51,15 @@ func createPairwiseKey() (*bgn.PublicKey, *bgn.SecretKey, error) {
 // TODO: Just send on bidder by referece - Do not need idx
 func genEncodingParameter(bidders []Bidder, idx int) {
 	// Generating random values
-	bidders[idx].rA = rand.Int63n(randPercent)
-	bidders[idx].rB = rand.Int63n(randPercent)
+	bidders[idx].rA = rand.Int63n(int64(randPercent))
+	bidders[idx].rB = rand.Int63n(int64(randPercent))
 
 	// Encrypting plaintext bid and random values
 	bidders[idx].eBid = bidders[idx].pubK.Encrypt(big.NewInt(bidders[idx].bid))
 
-	bidders[idx].eRA  = bidders[idx].pubK.Encrypt(big.NewInt(bidders[idx].rA))
+	bidders[idx].eRA = bidders[idx].pubK.Encrypt(big.NewInt(bidders[idx].rA))
 
-	bidders[idx].eRB  = bidders[idx].pubK.Encrypt(big.NewInt(bidders[idx].rB))
+	bidders[idx].eRB = bidders[idx].pubK.Encrypt(big.NewInt(bidders[idx].rB))
 }
 
 // A party calls this function to add its own randomization to the
@@ -87,7 +86,7 @@ func addRandomOnEncRcvd(fEncBid *bgn.Ciphertext, fRA *bgn.Ciphertext, fRB *bgn.C
 
 // Simple Bubble approach - O(n)
 func auctionBubble(bidders []Bidder) int {
-	
+
 	start := time.Now()
 	// Assuming 1st bidder as winner a.k.a. partyA; bubble for final winner - O(n)
 	var winner int = 0
@@ -97,12 +96,12 @@ func auctionBubble(bidders []Bidder) int {
 		partyB = i
 		var winnerCrossEncBid, partyBCrossEncBid *bgn.Ciphertext
 
-		// assuming that eRA and eRB values are shared already 
+		// assuming that eRA and eRB values are shared already
 		log.Println("Comparing ", winner, " and ", partyB, "raw values:", bidders[winner].bid, ",", bidders[partyB].bid)
 
 		// this is run on partyB ======
 		winnerCrossEncBid = addRandomOnEncRcvd(bidders[winner].eBid, bidders[winner].eRA, bidders[winner].eRB,
-						       bidders[winner].pubK, bidders[partyB].rA, bidders[partyB].rB)
+			bidders[winner].pubK, bidders[partyB].rA, bidders[partyB].rB)
 
 		// T1 old winner party decrypting the encrypted bid to compute encoded bid
 		bgn.ComputeDecryptionPreprocessing(bidders[winner].pubK, bidders[winner].secK)
@@ -113,7 +112,7 @@ func auctionBubble(bidders []Bidder) int {
 		// T2 old winner to add randomization on the encrypted bids of partyB
 		// this is run on partyA aka winner
 		partyBCrossEncBid = addRandomOnEncRcvd(bidders[partyB].eBid, bidders[partyB].eRA, bidders[partyB].eRB,
-						       bidders[partyB].pubK, bidders[winner].rA, bidders[winner].rB)
+			bidders[partyB].pubK, bidders[winner].rA, bidders[winner].rB)
 
 		// T2 partyB decrypting the encrypted bid to compute encoded bid
 		bgn.ComputeDecryptionPreprocessing(bidders[partyB].pubK, bidders[partyB].secK)
@@ -123,7 +122,7 @@ func auctionBubble(bidders []Bidder) int {
 
 		// Following code may be run on either side - after cross sharing normalizedEncodedPartyB and normalizedEncodedWinner
 		// TODO - no communication yet
-		log.Println("decodedWinner: ",normalizedEncodedWinner,"  :::: decodedPartyB: ",normalizedEncodedPartyB)
+		log.Println("decodedWinner: ", normalizedEncodedWinner, "  :::: decodedPartyB: ", normalizedEncodedPartyB)
 
 		if normalizedEncodedWinner.Cmp(normalizedEncodedPartyB) == -1 {
 			winner = partyB
@@ -186,19 +185,20 @@ func main() {
 	numBiddersLocal, er := strconv.Atoi(os.Args[4])
 	numBidders = numBiddersLocal
 
-	randPercentLocal, er := strconv.Atoi(os.Args[5])
-	randPercent = int64(randPercentLocal)
+	randPercentLocal, er := strconv.ParseFloat(os.Args[5], 64)
+	randPercent = randPercentLocal
 
 	maxBidLocal, er := strconv.Atoi(os.Args[6])
 	maxBid = int64(maxBidLocal)
 	if er != nil {
 		panic(er)
 	}
+	randPercent = (randPercent / 100.0) * float64(maxBid)
 
-    /*	var seedInt int
+	var seedInt int64
 	if len(os.Args) == 8 {
 		var err error
-		seedInt, err = strconv.Atoi(os.Args[7])
+		seedInt, err = strconv.ParseInt(os.Args[7], 10, 64)
 		if err != nil {
 			panic(err)
 		}
@@ -207,31 +207,13 @@ func main() {
 		fmt.Println(reflect.TypeOf(seed))
 		seedInt = seed
 	}
-	seedValue := int64(seedInt)
-	*/
-	var seedInt int64 // Change type to int64
-    if len(os.Args) == 8 {
-        var err error
-        seedInt, err = strconv.ParseInt(os.Args[7], 10, 64)
-        if err != nil {
-            panic(err)
-        }
-    } else {
-        seed := time.Now().UnixNano()
-        fmt.Println(reflect.TypeOf(seed))
-        seedInt = seed
-    }
-    seedValue := seedInt // No need for conversion
-    fmt.Println(seedValue)
-	
-	
+	seedValue := seedInt
+
 	now := time.Now()
 
 	fileName := fmt.Sprintf("%s_%d_%d_%d_%d_%d_%d_%d.run.txt", now.Format(DDMMYYYYhhmmss), n, keyBitLength, msgSpace,
 		numBidders, randPercent, maxBid, seedValue)
-	//var totalTime time.Duration = 0
-	//  minMemory := uint64(999999999)
-	//  maxMemory := uint64(0)
+
 	var m runtime.MemStats
 	rand.Seed(seedValue)
 	file, e := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
@@ -242,7 +224,7 @@ func main() {
 	}
 
 	mw := io.MultiWriter(os.Stdout, file)
-        log.SetOutput(mw)
+	log.SetOutput(mw)
 
 	start := time.Now()
 
@@ -259,9 +241,9 @@ func main() {
 		runtime.ReadMemStats(&m)
 
 		log.Println("Winner is  bidder: ", bidders[winnerIdx].identity, " with bid: ", bidders[winnerIdx].bid)
-	        elapsed := time.Since(aucStart)
+		elapsed := time.Since(aucStart)
 		log.Printf("Time during Auction %s memory taken = %.2f MB\n", elapsed, float64(m.Alloc)/(1024*1024))
-        time.Sleep(100 * time.Millisecond)
+		time.Sleep(100 * time.Millisecond)
 	}
 
 	duration := time.Since(start)

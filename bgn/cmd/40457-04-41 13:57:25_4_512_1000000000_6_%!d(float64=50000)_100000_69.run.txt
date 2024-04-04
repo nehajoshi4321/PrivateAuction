@@ -1,0 +1,60 @@
+2024/04/04 13:57:25 
+Iteration: 0 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 50000 	 maxBid: 100000
+2024/04/04 13:57:25 Comparing  0  and  1 raw values: 4512 , 123
+2024/04/04 13:57:26 decodedWinner:  797328172   :::: decodedPartyB:  455025673
+2024/04/04 13:57:26 Comparing  0  and  2 raw values: 4512 , 69253
+2024/04/04 13:57:28 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:28 Comparing  0  and  3 raw values: 4512 , 89453
+2024/04/04 13:57:30 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:30 Comparing  0  and  4 raw values: 4512 , 54742
+2024/04/04 13:57:31 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:31 Comparing  0  and  5 raw values: 4512 , 45864
+2024/04/04 13:57:33 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:33 Total time taken by the auction process: 8.394887845s
+2024/04/04 13:57:33 Winner is  bidder:  1  with bid:  4512
+2024/04/04 13:57:33 Time during Auction 8.394942646s memory taken = 164.60 MB
+2024/04/04 13:57:33 
+Iteration: 1 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 50000 	 maxBid: 100000
+2024/04/04 13:57:34 Comparing  0  and  1 raw values: 2449 , 91722
+2024/04/04 13:57:36 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:36 Comparing  0  and  2 raw values: 2449 , 18940
+2024/04/04 13:57:37 decodedWinner:  389687888   :::: decodedPartyB:  0
+2024/04/04 13:57:37 Comparing  0  and  3 raw values: 2449 , 39203
+2024/04/04 13:57:39 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:39 Comparing  0  and  4 raw values: 2449 , 99228
+2024/04/04 13:57:40 decodedWinner:  87960812   :::: decodedPartyB:  0
+2024/04/04 13:57:40 Comparing  0  and  5 raw values: 2449 , 87509
+2024/04/04 13:57:42 decodedWinner:  687526980   :::: decodedPartyB:  0
+2024/04/04 13:57:42 Total time taken by the auction process: 7.981189337s
+2024/04/04 13:57:42 Winner is  bidder:  1  with bid:  2449
+2024/04/04 13:57:42 Time during Auction 7.981246846s memory taken = 519.63 MB
+2024/04/04 13:57:42 
+Iteration: 2 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 50000 	 maxBid: 100000
+2024/04/04 13:57:42 Comparing  0  and  1 raw values: 14029 , 11273
+2024/04/04 13:57:44 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:44 Comparing  0  and  2 raw values: 14029 , 41445
+2024/04/04 13:57:46 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:46 Comparing  0  and  3 raw values: 14029 , 23252
+2024/04/04 13:57:48 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:48 Comparing  0  and  4 raw values: 14029 , 64816
+2024/04/04 13:57:50 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:50 Comparing  0  and  5 raw values: 14029 , 41186
+2024/04/04 13:57:51 decodedWinner:  829156986   :::: decodedPartyB:  0
+2024/04/04 13:57:51 Total time taken by the auction process: 9.361022371s
+2024/04/04 13:57:51 Winner is  bidder:  1  with bid:  14029
+2024/04/04 13:57:51 Time during Auction 9.361059638s memory taken = 679.91 MB
+2024/04/04 13:57:51 
+Iteration: 3 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 50000 	 maxBid: 100000
+2024/04/04 13:57:52 Comparing  0  and  1 raw values: 88738 , 70281
+2024/04/04 13:57:53 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:53 Comparing  0  and  2 raw values: 88738 , 16740
+2024/04/04 13:57:55 decodedWinner:  0   :::: decodedPartyB:  645555288
+2024/04/04 13:57:55 Comparing  2  and  3 raw values: 16740 , 49629
+2024/04/04 13:57:56 decodedWinner:  831463964   :::: decodedPartyB:  0
+2024/04/04 13:57:56 Comparing  2  and  4 raw values: 16740 , 33224
+2024/04/04 13:57:58 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:58 Comparing  2  and  5 raw values: 16740 , 12040
+2024/04/04 13:57:59 decodedWinner:  271829754   :::: decodedPartyB:  197565054
+2024/04/04 13:57:59 Total time taken by the auction process: 7.838390034s
+2024/04/04 13:57:59 Winner is  bidder:  3  with bid:  16740
+2024/04/04 13:57:59 Time during Auction 7.8384366s memory taken = 648.72 MB

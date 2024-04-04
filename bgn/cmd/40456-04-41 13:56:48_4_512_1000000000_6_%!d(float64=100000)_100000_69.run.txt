@@ -1,0 +1,35 @@
+2024/04/04 13:56:48 
+Iteration: 0 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 100000 	 maxBid: 100000
+2024/04/04 13:56:49 Comparing  0  and  1 raw values: 4512 , 123
+2024/04/04 13:56:50 decodedWinner:  797328172   :::: decodedPartyB:  455025673
+2024/04/04 13:56:50 Comparing  0  and  2 raw values: 4512 , 69253
+2024/04/04 13:56:52 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:56:52 Comparing  0  and  3 raw values: 4512 , 89453
+2024/04/04 13:56:53 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:56:53 Comparing  0  and  4 raw values: 4512 , 54742
+2024/04/04 13:56:55 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:56:55 Comparing  0  and  5 raw values: 4512 , 45864
+2024/04/04 13:56:57 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:56:57 Total time taken by the auction process: 8.315723596s
+2024/04/04 13:56:57 Winner is  bidder:  1  with bid:  4512
+2024/04/04 13:56:57 Time during Auction 8.315764504s memory taken = 247.64 MB
+2024/04/04 13:56:57 
+Iteration: 1 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 100000 	 maxBid: 100000
+2024/04/04 13:56:57 Comparing  0  and  1 raw values: 2449 , 91722
+2024/04/04 13:56:59 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:56:59 Comparing  0  and  2 raw values: 2449 , 18940
+2024/04/04 13:57:01 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:01 Comparing  0  and  3 raw values: 2449 , 39203
+2024/04/04 13:57:03 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:03 Comparing  0  and  4 raw values: 2449 , 99228
+2024/04/04 13:57:04 decodedWinner:  336810812   :::: decodedPartyB:  0
+2024/04/04 13:57:04 Comparing  0  and  5 raw values: 2449 , 87509
+2024/04/04 13:57:06 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:06 Total time taken by the auction process: 8.737583743s
+2024/04/04 13:57:06 Winner is  bidder:  1  with bid:  2449
+2024/04/04 13:57:06 Time during Auction 8.737618505s memory taken = 364.91 MB
+2024/04/04 13:57:06 
+Iteration: 2 keyBitLength: 512 	 msgSpace: 1000000000 	 numBidders: 6 	 randPercent: 100000 	 maxBid: 100000
+2024/04/04 13:57:06 Comparing  0  and  1 raw values: 14029 , 11273
+2024/04/04 13:57:08 decodedWinner:  0   :::: decodedPartyB:  0
+2024/04/04 13:57:08 Comparing  0  and  2 raw values: 14029 , 41445
