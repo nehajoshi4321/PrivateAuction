@@ -3,38 +3,30 @@
 ## 1.Install PBC
 
 ```sh
-$ sudo apt-get install build-essential flex bison
+$ sudo apt-get install -y build-essential flex bison libgmp3-dev
 
 The PBC source can be compiled and installed using the usual GNU Build System:
 
 $ wget -c https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz -O - | tar -xz
 $ cd pbc-0.5.14
-``````````
-cd pbc-0.5.14
-./configure
-make
-sudo make install
+$ ./configure
+$ make
+$ sudo make install
 ``````````````````
 
 After installing, you may need to rebuild the search path for libraries.
 
 **NOTE: the PBC library is installed to /usr/local/lib so you may need to add ```export LD_LIBRARY_PATH=/usr/local/lib/``` to your .profile or equivalent**
 
-**## 2.Install BGN**
-Most systems include a package for GMP. To install GMP in Debian / Ubuntu:
-
+**## 2.Install BGN re-req on Ubuntu**
+We may need Go to be installed - ref https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04
 ```sh
-$ sudo apt-get install libgmp-dev
+$ curl  -OL https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
+$  sha256sum go1.22.2.linux-amd64.tar.gz 
+$  sudo tar -C /usr/local -xvf go1.22.2.linux-amd64.tar.gz 
+$  export PATH=$PATH:/usr/local/go/bin
+$  sudo vi /etc/profile ; # add above path
 ```
-For an RPM installation with YUM:
-```sh
-$ sudo yum install gmp-devel
-```
-For installation with Fink (http://www.finkproject.org/) on Mac OS X:
-```sh
-$ sudo fink install gmp gmp-shlibs
-```
-For more information or to compile from source, visit https://gmplib.org/
 
 ## 3.Running BGN
 ```sh
@@ -44,7 +36,7 @@ $ make install && make build && make run
 ## Testing BGN
 ``````````````````
 $ cd bgn
-$ make install && make build
+$ make install && make build ; # has errors on duplicate globals and clash in name space
 $ go test
 $ go test -bench=.
 ``````````````````
