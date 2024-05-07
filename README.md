@@ -12,6 +12,9 @@ $ cd pbc-0.5.14
 $ ./configure
 $ make
 $ sudo make install
+$ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/
+$ sudo vi /etc/profile ; # add above path
+
 ``````````````````
 
 After installing, you may need to rebuild the search path for libraries.
@@ -21,11 +24,15 @@ After installing, you may need to rebuild the search path for libraries.
 **## 2.Install BGN re-req on Ubuntu**
 We may need Go to be installed - ref https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04
 ```sh
-$ curl  -OL https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
+$  curl  -OL https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
 $  sha256sum go1.22.2.linux-amd64.tar.gz 
 $  sudo tar -C /usr/local -xvf go1.22.2.linux-amd64.tar.gz 
 $  export PATH=$PATH:/usr/local/go/bin
-$  sudo vi /etc/profile ; # add above path
+$  sudo vi /etc/profile ; # add above paths
+```
+alternate
+```sh
+sudo snap install go
 ```
 
 ## 3.Running BGN
@@ -43,5 +50,6 @@ $ go test -bench=.
 ## Testing the auction code
 ``````````````````
 $ cd bgn/cmd/
-$ go run test2.go "\nIteration:", i, "keyBitLength:", keyBitLength, "\t msgSpace:", msgSpace, "\t numBidders:", numBidders, randPercent:", randPercent, "\t maxBid:", maxBid //to test the encrypted message
+$ go run test2.go <Iteration:> <keyBitLength> <msgSpace> <msgSpace> <numBidders> <numBidders> <randPercent> <maxBid> ;  //to test the encrypted message
+$ go run test2.go  5 1000  100000 4 5 100
 ``````````````````
